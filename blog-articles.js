@@ -1,28 +1,28 @@
 
 // Blog Articles Data
 const blogArticles = [
-    {
-        id: "human-centric-recruitment-2026",
-        title: "Human-Centric Recruitment in an AI-Driven 2026",
-        excerpt: "Explore how BOSSS balances cutting-edge AI efficiency with the irreplaceable value of human intuition to deliver elite staffing solutions.",
-        image: "https://cdn.marblism.com/TAGN1J77STm.webp",
-        imageAlt: "Professional partnership in 2026",
-        date: "March 29, 2026",
-        readTime: "6 min read",
-        category: "Leadership",
-        slug: "human-centric-recruitment-2026"
-    },
-    {
-        id: "agility-over-stability-2026",
-        title: "Agility Over Stability: 2026 Temp-to-Hire Guide",
-        excerpt: "Discover why the temp-to-hire model is the strategic secret weapon for businesses looking to minimize risk and maximize growth in 2026.",
-        image: "https://cdn.marblism.com/TAGN1J77STm.webp",
-        imageAlt: "Successful placement agreement in a modern office",
-        date: "March 29, 2026",
-        readTime: "8 min read",
-        category: "Workforce",
-        slug: "agility-over-stability-temp-to-hire-2026"
-    }
+    {  
+    id: "6735f99b-38d8-4396-9213-194b32258e53",  
+    title: "Human-Centric Recruitment in an AI-Driven 2026",  
+    excerpt: "Explore how BOSSS balances high-tech efficiency with human intuition for elite staffing in the year 2026.",  
+    image: "https://cdn.marblism.com/TAGN1J77STm.webp",  
+    imageAlt: "Successful professional placement in a modern office",  
+    date: "March 29, 2026",  
+    readTime: "6 min",  
+    category: "Insight",  
+    slug: "human-centric-recruitment-ai-2026"  
+  },  
+  {  
+    id: "718f9d85-fe41-4527-98cc-290369bdc3b1",  
+    title: "Agility Over Stability: The Temp-to-Hire Secret",  
+    excerpt: "Discover why the temp-to-hire model is the strategic choice for businesses looking to minimize risk in 2026.",  
+    image: "https://cdn.marblism.com/XZv9YOfsJ3P.webp",  
+    imageAlt: "Modern workforce agility and strategy",  
+    date: "March 29, 2026",  
+    readTime: "8 min",  
+    category: "Strategy",  
+    slug: "agility-over-stability-temp-to-hire-2026"  
+  }  
     // Add more articles here following the same format
 ];
 
