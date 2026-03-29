@@ -1,362 +1,74 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Partner with BOSSS for personalized staffing, recruitment, and workforce management. Connecting businesses with quality candidates across the US.">
-    <meta name="keywords" content="staffing solutions, recruitment, specialized staffing, workforce management">
+// Blog Articles Data
+const blogArticles = [
+    {
+        id: "human-centric-recruitment-2026",
+        title: "Human-Centric Recruitment in an AI-Driven 2026",
+        excerpt: "Explore how BOSSS balances cutting-edge AI efficiency with the irreplaceable value of human intuition to deliver elite staffing solutions.",
+        image: "https://cdn.marblism.com/TAGN1J77STm.webp",
+        imageAlt: "Professional partnership in 2026",
+        date: "March 29, 2026",
+        readTime: "6 min read",
+        category: "Leadership",
+        slug: "human-centric-recruitment-2026"
+    },
+    {
+        id: "agility-over-stability-2026",
+        title: "Agility Over Stability: 2026 Temp-to-Hire Guide",
+        excerpt: "Discover why the temp-to-hire model is the strategic secret weapon for businesses looking to minimize risk and maximize growth in 2026.",
+        image: "https://cdn.marblism.com/TAGN1J77STm.webp",
+        imageAlt: "Successful placement agreement in a modern office",
+        date: "March 29, 2026",
+        readTime: "8 min read",
+        category: "Workforce",
+        slug: "agility-over-stability-temp-to-hire-2026"
+    }
+    // Add more articles here following the same format
+];
+
+// Function to render article cards
+function renderArticleCards(articles, containerId, limit = null) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const articlesToRender = limit ? articles.slice(0, limit) : articles;
     
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="BOSSS: Elite Specialized Staffing">
-    <meta property="og:description" content="Connecting top-tier talent with industry-leading employers.">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:type" content="website">
-    
-    <!-- LinkedIn Insight Tag Placeholder -->
-    <script type="text/javascript">
-    // LinkedIn Insight Tag Code Here
-    // Partner ID: [YOUR_PARTNER_ID]
-    </script>
-    
-    <title>BOSSS | Specialized Staffing & Recruitment Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'orchid': '#9932CC',
-                        'deep-black': '#000000',
-                    },
-                    fontFamily: {
-                        'sans': ['Inter', 'Montserrat', 'Open Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-<body class="font-sans bg-white text-gray-900">
-    
-    <!-- Sticky Header Navigation -->
-    <header class="sticky top-0 z-50 bg-deep-black text-white shadow-lg">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <img src="logo.png" alt="BOSSS Logo" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span style="display:none;" class="text-2xl font-bold text-orchid">BOSSS</span>
-                </div>
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="#home" class="hover:text-orchid transition-colors duration-300">Home</a>
-                    <a href="#services" class="hover:text-orchid transition-colors duration-300">Services</a>
-                    <a href="#journal" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                    <a href="#candidates" class="hover:text-orchid transition-colors duration-300">Candidates</a>
-                    <a href="#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle mobile menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
-                <a href="#home" class="hover:text-orchid transition-colors duration-300">Home</a>
-                <a href="#services" class="hover:text-orchid transition-colors duration-300">Services</a>
-                <a href="#journal" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                <a href="#candidates" class="hover:text-orchid transition-colors duration-300">Candidates</a>
-                <a href="#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <main>
-        <section id="home" class="bg-gradient-to-r from-deep-black to-gray-900 text-white py-24">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6">Elite Talent for Specialized Solutions</h1>
-                    <p class="text-xl md:text-2xl mb-8 text-gray-300">Black Orchid Specialized Staffing Solutions (BOSSS) connects high-performance businesses with qualified talent through personalized, streamlined recruitment.</p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a href="#contact" class="bg-orchid hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105" aria-label="Find Talent">Find Talent</a>
-                        <a href="#candidates" class="bg-white hover:bg-gray-100 text-orchid font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105" aria-label="Join Our Pool">Join Our Pool</a>
-                    </div>
+    container.innerHTML = articlesToRender.map(article => `
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform duration-300 hover:-translate-y-2">
+            <div class="relative h-48 overflow-hidden">
+                <img src="${article.image}" alt="${article.imageAlt}" class="w-full h-full object-cover">
+                <div class="absolute top-4 left-4 bg-orchid text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    ${article.category}
                 </div>
             </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-16 text-deep-black">Our Services</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-deep-black">Staffing Services</h3>
-                        <p class="text-gray-700">Tailored solutions for HR departments and business owners seeking exceptional talent to drive organizational success.</p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-deep-black">Recruitment Solutions</h3>
-                        <p class="text-gray-700">Connecting job seekers with their next career-defining role through strategic matching and personalized support.</p>
-                    </div>
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-deep-black">Workforce Management</h3>
-                        <p class="text-gray-700">Long-term partnerships for ongoing employment needs, ensuring continuity and quality in your workforce.</p>
-                    </div>
+            <div class="p-6">
+                <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                    <span>${article.date}</span>
+                    <span>•</span>
+                    <span>${article.readTime}</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- The BOSSS Journal Section -->
-        <section id="journal" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-4xl font-bold mb-4 text-deep-black">Insights & Excellence</h2>
-                        <p class="text-xl text-gray-700">Stay ahead of the curve with our latest updates on workforce management, recruitment trends, and talent acquisition strategies.</p>
-                    </div>
-                    
-                    <!-- ========================================
-                         PASTE MARBLISM ARTICLES BELOW THIS LINE
-                         ======================================== -->
-                    
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-articles">
-                        
-                        <!-- Article Card: Human-Centric Recruitment -->
-                        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform duration-300 hover:-translate-y-2">
-                            <div class="relative h-48 overflow-hidden">
-                                <img src="https://cdn.marblism.com/TAGN1J77STm.webp" alt="Professional partnership in 2026" class="w-full h-full object-cover">
-                                <div class="absolute top-4 left-4 bg-orchid text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                                    Leadership
-                                </div>
-                            </div>
-                            <div class="p-6">
-                                <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
-                                    <span>March 29, 2026</span>
-                                    <span>•</span>
-                                    <span>6 min read</span>
-                                </div>
-                                <h3 class="text-xl font-bold text-deep-black mb-3 leading-tight">Human-Centric Recruitment in an AI-Driven 2026</h3>
-                                <p class="text-gray-600 text-sm mb-6 line-clamp-3">
-                                    Explore how BOSSS balances cutting-edge AI efficiency with the irreplaceable value of human intuition to deliver elite staffing solutions.
-                                </p>
-                                <a href="articles/human-centric-recruitment-2026.html" class="inline-flex items-center text-orchid font-semibold hover:gap-2 transition-all">
-                                    Read Full Article  
-                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                    <!-- ========================================
-                         PASTE MARBLISM ARTICLES ABOVE THIS LINE
-                         ======================================== -->
-                    
-                    <div class="text-center mt-12">
-                        <a href="blog.html" class="bg-orchid hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block" aria-label="View All Articles">View All Articles</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold text-center mb-8 text-deep-black">About BOSSS</h2>
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                            We don't just fill seats; we build partnerships. At Black Orchid Specialized Staffing Solutions, we understand the nuances of employer needs and candidate aspirations to create lasting matches.
-                        </p>
-                        <p class="text-lg text-gray-700 leading-relaxed">
-                            Our commitment to excellence, combined with cutting-edge technology and personalized service, ensures that every placement is not just a transaction, but the beginning of a successful professional relationship.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Candidates Section -->
-        <section id="candidates" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black">Join Our Talent Pool</h2>
-                    <p class="text-xl text-gray-700 mb-8">Take the next step in your career with BOSSS. We connect qualified professionals with opportunities that match their skills and aspirations.</p>
-                    <div class="bg-white p-8 rounded-lg shadow-lg">
-                        <form name="candidate-application" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-6">
-                            <input type="hidden" name="form-name" value="candidate-application" />
-                            <p class="hidden">
-                                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                            </p>
-                            <input type="text" name="full-name" placeholder="Full Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Full Name">
-                            <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Email Address">
-                            <input type="tel" name="phone" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" aria-label="Phone Number">
-                            <select name="expertise" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Area of Expertise">
-                                <option value="">Select Area of Expertise</option>
-                                <option value="technology">Technology</option>
-                                <option value="healthcare">Healthcare</option>
-                                <option value="finance">Finance</option>
-                                <option value="education">Education</option>
-                                <option value="other">Other</option>
-                            </select>
-                            <textarea name="experience" placeholder="Tell us about your experience" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" aria-label="Experience"></textarea>
-                            <button type="submit" class="bg-orchid hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105" aria-label="Submit Application">
-                                Submit Application
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold text-center mb-8 text-deep-black">Contact Us</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                            <h3 class="text-2xl font-bold mb-6 text-deep-black">Get in Touch</h3>
-                            <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col gap-4">
-                                <input type="hidden" name="form-name" value="contact" />
-                                <p class="hidden">
-                                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                                </p>
-                                <input type="text" name="company-name" placeholder="Company Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Company Name">
-                                <input type="email" name="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Email Address">
-                                <textarea name="message" placeholder="How can we help you?" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orchid" required aria-label="Message"></textarea>
-                                <button type="submit" class="bg-orchid hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105" aria-label="Send Message">Send Message</button>
-                            </form>
-                        </div>
-                        <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
-                            <h3 class="text-2xl font-bold mb-6 text-deep-black">Contact Information</h3>
-                            <div class="flex flex-col gap-6">
-                                <div class="flex items-start gap-4">
-                                    <svg class="w-6 h-6 text-orchid mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                    <div>
-                                        <p class="font-bold text-deep-black">Email</p>
-                                        <a href="mailto:info@bosssllc.com" class="text-orchid hover:underline">info@bosssllc.com</a>
-                                    </div>
-                                </div>
-                                <div class="flex items-start gap-4">
-                                    <svg class="w-6 h-6 text-orchid mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                    <div>
-                                        <p class="font-bold text-deep-black">Compliance</p>
-                                        <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-deep-black text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <img src="logo.png" alt="BOSSS Logo" class="h-12 w-auto mb-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span style="display:none;" class="text-2xl font-bold text-orchid">BOSSS</span>
-                    <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                    <div class="flex flex-col gap-2">
-                        <a href="#home" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
-                        <a href="#services" class="text-gray-400 hover:text-orchid transition-colors">Services</a>
-                        <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
-                        <a href="#candidates" class="text-gray-400 hover:text-orchid transition-colors">Candidates</a>
-                        <a href="#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
-                    <a href="https://www.linkedin.com/company/bosssllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-orchid transition-colors" aria-label="Follow us on LinkedIn">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        Follow us on LinkedIn
-                    </a>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8">
-                <div class="flex flex-col gap-4 text-sm text-gray-400">
-                    <div>
-                        <h5 class="font-bold text-white mb-2">AI Transparency & Disclosure</h5>
-                        <p>Black Orchid Specialized Staffing Solutions (BOSSS) utilizes automated decision-making and Artificial Intelligence (AI) tools to assist in the candidate screening and matching process. These tools are used to enhance efficiency and objectivity. Pursuant to 2026 California regulatory standards, all candidates retain the right to request a manual human review of any automated employment decision. To request a review, contact <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>.</p>
-                    </div>
-                    
-                    <div>
-                        <h5 class="font-bold text-white mb-2">Accessibility Statement</h5>
-                        <p>BOSSS is committed to digital accessibility. This site is designed to be WCAG 2.1 Level AA compliant to ensure an inclusive experience for all.</p>
-                    </div>
-                    
-                    <div>
-                        <h5 class="font-bold text-white mb-2">Privacy & AI Disclosure</h5>
-                        <p>BOSSS utilizes AI-assisted tools to help match candidates with roles. Candidates have the right to request a manual review of any AI-influenced decision. We collect personal data solely for recruitment purposes.</p>
-                    </div>
-                    
-                    <div>
-                        <h5 class="font-bold text-white mb-2">Blog Disclaimer</h5>
-                        <p>Information provided in the BOSSS Journal is for educational and informational purposes only and does not constitute legal, tax, HR, or professional advice. Readers should consult qualified professionals regarding their specific circumstances.</p>
-                    </div>
-                    
-                    <div class="text-center mt-4">
-                        <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
-                    </div>
-                </div>
+                <h3 class="text-xl font-bold text-deep-black mb-3 leading-tight">${article.title}</h3>
+                <p class="text-gray-600 text-sm mb-6 line-clamp-3">
+                    ${article.excerpt}
+                </p>
+                <a href="articles/${article.slug}.html" class="inline-flex items-center text-orchid font-semibold hover:gap-2 transition-all">
+                    Read Full Article  
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
             </div>
         </div>
-    </footer>
+    `).join('');
+}
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // For homepage - show latest 3 articles
+    if (document.getElementById('blog-articles')) {
+        renderArticleCards(blogArticles, 'blog-articles', 3);
+    }
+    
+    // For blog archive page - show all articles
+    if (document.getElementById('all-blog-articles')) {
+        renderArticleCards(blogArticles, 'all-blog-articles');
+    }
+});
