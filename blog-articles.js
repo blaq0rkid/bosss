@@ -2,6 +2,17 @@
 // Blog Articles Data
 const blogArticles = [
     {  
+  id: "bcf53a6a-364b-49da-b33d-4d358cdcb968",  
+  title: "7 Deadly AI Recruiting Mistakes | BOSSS",  
+  excerpt: "Discover why over-reliance on AI is costing you top talent and how BOSSS provides elite, human-centric hiring solutions in 2026.",  
+  image: "https://cdn.marblism.com/1nTW3bE1YKd.webp",  
+  imageAlt: "The 7 Deadly AI Recruiting Mistakes Hero",  
+  date: "March 29, 2026",  
+  readTime: "8 min",  
+  category: "Technology",  
+  slug: "7-deadly-ai-mistakes"  
+},  
+    {  
     id: "6735f99b-38d8-4396-9213-194b32258e53",  
     title: "Human-Centric Recruitment in an AI-Driven 2026",  
     excerpt: "Explore how BOSSS balances high-tech efficiency with human intuition for elite staffing in the year 2026.",  
