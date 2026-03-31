@@ -25,7 +25,6 @@
 </head>
 <body class="font-sans bg-white text-gray-900">
     
-    <!-- Sticky Header Navigation -->
     <header class="sticky top-0 z-50 bg-deep-black text-white shadow-lg">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
@@ -42,7 +41,7 @@
                     <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
                     <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle mobile menu">
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -59,7 +58,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="bg-gradient-to-r from-orchid to-purple-800 text-white py-20">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
@@ -69,7 +67,6 @@
             </div>
         </section>
 
-        <!-- Core Philosophy -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
@@ -86,7 +83,6 @@
             </div>
         </section>
 
-        <!-- The Grit Scorecard -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="max-w-5xl mx-auto">
@@ -128,7 +124,6 @@
             </div>
         </section>
 
-        <!-- Green Port Readiness -->
         <section class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-5xl mx-auto">
@@ -176,7 +171,6 @@
             </div>
         </section>
 
-        <!-- Resilient Talent Activation -->
         <section class="py-20 bg-orchid text-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
@@ -200,7 +194,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto text-center">
@@ -221,7 +214,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-deep-black text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
@@ -244,6 +236,7 @@
                     <div class="flex flex-col gap-2">
                         <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights</a>
                         <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
                     </div>
                 </div>
                 <div>
@@ -265,11 +258,8 @@
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
         if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+            mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         }
     </script>
 </body>
