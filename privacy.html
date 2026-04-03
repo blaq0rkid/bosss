@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -22,28 +24,39 @@
         }
     </script>
 </head>
-<body class="font-sans bg-white text-gray-900">
+<body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
-    <header class="sticky top-0 z-50 bg-deep-black text-white shadow-lg">
+    <header class="sticky top-0 z-50 bg-deep-black dark:bg-gray-950 text-white shadow-lg">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
+                <div class="flex items-center gap-3">
                     <a href="index.html">
-                        <img src="logo.png" alt="BOSSS Logo" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span style="display:none;" class="text-2xl font-bold text-orchid">BOSSS</span>
+                        <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto dark:invert transition-all duration-300">
                     </a>
+                    <span class="text-lg font-bold text-white hidden sm:block">Black Orchid Specialized Staffing Solutions</span>
+                    <span class="text-lg font-bold text-orchid sm:hidden">BOSSS</span>
                 </div>
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
-                    <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                    <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                    <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
+                <div class="flex items-center gap-4">
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
+                        <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                        <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
+                        <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
+                    </div>
+                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
                 <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
@@ -55,7 +68,7 @@
     </header>
 
     <main>
-        <section class="bg-gradient-to-r from-deep-black to-gray-900 text-white py-16">
+        <section class="bg-gradient-to-r from-deep-black to-gray-900 dark:from-gray-950 dark:to-black text-white py-16">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Privacy Center</h1>
@@ -64,22 +77,22 @@
             </div>
         </section>
 
-        <section id="ai-transparency" class="py-20 bg-white">
+        <section id="ai-transparency" class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black">AI Transparency & Ethics</h2>
+                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">AI Transparency & Ethics</h2>
                     
-                    <div class="bg-orchid bg-opacity-10 border-l-4 border-orchid p-8 rounded-lg mb-8">
-                        <h3 class="text-2xl font-bold mb-4 text-deep-black">How BOSSS Uses AI</h3>
-                        <p class="text-lg text-gray-700 mb-4">
+                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-8 rounded-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">How BOSSS Uses AI</h3>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
                             Black Orchid Specialized Staffing Solutions utilizes AI-augmented screening for operational efficiency. In accordance with California transparency laws (SB 243/AB 1898), all candidates retain the right to request a manual human review of any automated employment decision.
                         </p>
                     </div>
 
                     <div class="flex flex-col gap-6">
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">What AI Does at BOSSS</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">What AI Does at BOSSS</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Initial resume screening for keyword matching and experience relevance</li>
                                 <li>Grit Scorecard preliminary assessment based on historical patterns</li>
                                 <li>Scheduling optimization for interviews and placement coordination</li>
@@ -87,9 +100,9 @@
                             </ul>
                         </div>
 
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">What AI Does NOT Do</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">What AI Does NOT Do</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Make final hiring decisions without human review</li>
                                 <li>Access protected class information (age, race, disability status)</li>
                                 <li>Determine compensation rates or salary negotiations</li>
@@ -97,9 +110,9 @@
                             </ul>
                         </div>
 
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">Your Right to Human Review</h4>
-                            <p class="text-gray-700 mb-4">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Your Right to Human Review</h4>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">
                                 If you believe an AI system made an error in your candidacy evaluation, you may request a manual human review at any time. Our compliance team will respond within 10 business days.
                             </p>
                             <a href="mailto:compliance@bosssllc.com?subject=AI Review Request" class="inline-block bg-orchid text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors">
@@ -111,18 +124,18 @@
             </div>
         </section>
 
-        <section id="data-freedom" class="py-20 bg-gray-50">
+        <section id="data-freedom" class="py-20 bg-gray-50 dark:bg-gray-800">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black">Data Freedom: Your Choice</h2>
+                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">Data Freedom: Your Choice</h2>
                     
-                    <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-orchid mb-8">
-                        <h3 class="text-2xl font-bold mb-4 text-deep-black">One-Click Data Purge</h3>
-                        <p class="text-lg text-gray-700 mb-6">
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-l-4 border-orchid mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">One-Click Data Purge</h3>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
                             Your data, your choice. As a pioneer in AI-driven staffing, BOSSS provides a "One-Click Purge" option. At any time, you may request the complete deletion of your screening data, resume history, and Grit Scorecard from our active AI training models. No questions asked.
                         </p>
-                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
-                            <p class="text-sm text-gray-700">
+                        <div class="bg-yellow-50 dark:bg-yellow-900 dark:bg-opacity-30 border-l-4 border-yellow-500 p-4 mb-6">
+                            <p class="text-sm text-gray-700 dark:text-gray-300">
                                 <strong>Important:</strong> Data purge requests are permanent and cannot be reversed. You will need to resubmit all information if you wish to be considered for future opportunities.
                             </p>
                         </div>
@@ -132,9 +145,9 @@
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">What Gets Deleted</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">What Gets Deleted</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Resume and application materials</li>
                                 <li>Grit Scorecard results and assessments</li>
                                 <li>Interview notes and evaluations</li>
@@ -143,9 +156,9 @@
                             </ul>
                         </div>
 
-                        <div class="bg-white p-6 rounded-lg shadow">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">What We Keep (Legal Requirements)</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">What We Keep (Legal Requirements)</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Tax documentation (7 years)</li>
                                 <li>Workers' compensation records</li>
                                 <li>Payroll history for placed candidates</li>
@@ -158,18 +171,18 @@
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black">Additional Privacy Protections</h2>
+                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">Additional Privacy Protections</h2>
                     
                     <div class="flex flex-col gap-6">
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-orchid">
-                            <h3 class="text-xl font-bold mb-3 text-deep-black">CCPA/CPRA Compliance</h3>
-                            <p class="text-gray-700 mb-4">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-orchid">
+                            <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">CCPA/CPRA Compliance</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">
                                 BOSSS complies with the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA). You have the right to:
                             </p>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Know what personal information we collect</li>
                                 <li>Know if we sell or share your personal information (we don't)</li>
                                 <li>Access your personal information</li>
@@ -178,16 +191,16 @@
                             </ul>
                         </div>
 
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-orchid">
-                            <h3 class="text-xl font-bold mb-3 text-deep-black">Data Security</h3>
-                            <p class="text-gray-700">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-orchid">
+                            <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Data Security</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
                                 We utilize industry-standard encryption (TLS 1.3), multi-factor authentication for staff access, and annual third-party security audits. All candidate data is stored on SOC 2 Type II certified infrastructure.
                             </p>
                         </div>
 
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-orchid">
-                            <h3 class="text-xl font-bold mb-3 text-deep-black">Digital Accessibility</h3>
-                            <p class="text-gray-700">
+                        <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-orchid">
+                            <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Digital Accessibility</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
                                 BOSSS is committed to digital accessibility. This site is designed to be WCAG 2.1 Level AA compliant to ensure an inclusive experience for all users, including those using assistive technologies.
                             </p>
                         </div>
@@ -211,7 +224,7 @@
         </section>
     </main>
 
-    <footer class="bg-deep-black text-white py-12">
+    <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="text-center text-sm text-gray-400">
                 <p class="mb-4">Last Updated: March 31, 2026</p>
@@ -221,6 +234,33 @@
     </footer>
 
     <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const html = document.documentElement;
+
+        const currentMode = localStorage.getItem('darkMode') || 'light';
+        
+        if (currentMode === 'dark') {
+            html.classList.add('dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenuBtn && mobileMenu) {
