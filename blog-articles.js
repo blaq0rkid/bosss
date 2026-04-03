@@ -2,6 +2,17 @@
 // Blog Articles Data
 const blogArticles = [
     {    
+    id: "rtx-future-logistics-resilient",    
+    title: "RTX: Why the Future of Logistics isn't Just Automated—It's Resilient",    
+    excerpt: "Automation is a tool; resilience is the goal. Introducing the Resilient Talent Xchange (RTX) for the Logistics & Supply Chain sectors.",    
+    image: "https://cdn.marblism.com/JdXCV96HZYB.webp",     
+    imageAlt: "A high-tech logistics hub showcasing the RTX Resilient Talent Xchange model in action.",    
+    date: "2026-03-30",    
+    readTime: "7 min",    
+    category: "Trends",    
+    slug: "rtx-future-logistics-resilient"    
+  },
+    {    
     id: "skills-based-talent-acquisition-2026",    
     title: "Why Skills-Based Talent Acquisition Strategies Will Change the Way You Build Your Team",    
     excerpt: "The resume is dead. Long live the Grit Scorecard. Discover why skills-based hiring is the only way to build a high-performance workforce in 2026.",    
