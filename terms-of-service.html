@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terms of Service for Black Orchid Specialized Staffing Solutions (BOSSS) - Governing use of RTX technology, AI-driven services, and staffing solutions.">
+    <meta name="description" content="Terms of Service - BOSSS Legal Agreements and Service Terms">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <link rel="apple-touch-icon" href="logo (2).png">
+    
     <title>Terms of Service | BOSSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,43 +31,65 @@
 </head>
 <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
-    <header class="sticky top-0 z-50 bg-deep-black dark:bg-gray-950 text-white shadow-lg">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
         <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <a href="index.html">
-                        <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto dark:invert transition-all duration-300">
-                    </a>
-                    <span class="text-lg font-bold text-white hidden sm:block">Black Orchid Specialized Staffing Solutions</span>
-                    <span class="text-lg font-bold text-orchid sm:hidden">BOSSS</span>
+            <div class="flex items-center justify-between gap-8">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
+                </a>
+                
+                <!-- Centered Company Name -->
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
                 </div>
-                <div class="flex items-center gap-4">
-                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
-                        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
+                    <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
+                    <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Journal</a>
+                    <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Contact</a>
+                    
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors ml-4" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                         </svg>
-                        <svg id="moonIcon" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                         </svg>
                     </button>
-                    <div class="hidden md:flex items-center gap-8">
-                        <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
-                        <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                        <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                        <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
-                    </div>
-                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                </div>
+                
+                <!-- Mobile menu button and dark mode toggle -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIconMobile" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
-                <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
-                <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
+            
+            <!-- Mobile company name -->
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
+                <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -72,8 +99,7 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h1>
-                    <p class="text-xl">Effective Date: March 31, 2026</p>
-                    <p class="text-sm text-gray-300 dark:text-gray-400 mt-2">Document ID: BOSSS-MASTER-2026-CONSOLIDATED</p>
+                    <p class="text-xl">Legal Agreement for BOSSS Services</p>
                 </div>
             </div>
         </section>
@@ -81,212 +107,177 @@
         <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">Last Updated: April 3, 2026</p>
                     
-                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-6 rounded-lg mb-12">
+                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-8 rounded-lg mb-12">
                         <p class="text-lg text-gray-700 dark:text-gray-300">
-                            By accessing or using the services of Black Orchid Specialized Staffing Solutions LLC ("BOSSS"), including but not limited to bosssllc.com, the RTX Strategy, Grit Scorecard™, and Sim-to-Ship™ technology, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                            These Terms of Service ("Terms") govern your use of services provided by Black Orchid Specialized Staffing Solutions ("BOSSS," "we," "us," or "our"). By using our services, you agree to these Terms.
                         </p>
                     </div>
 
                     <div class="flex flex-col gap-12">
                         
                         <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">1</span>
-                                Acceptable Use of Proprietary RTX Technology
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                    All proprietary vetting tools, including the <strong>Grit Scorecard™</strong> and <strong>Sim-to-Ship™</strong> simulation models, are the intellectual property of BOSSS LLC.
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">1. Services Provided</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    BOSSS provides staffing and recruitment services, including but not limited to:
                                 </p>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded border-l-4 border-orchid">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Users are Prohibited From:</h3>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Reverse-engineering any assessment algorithms or proprietary methodologies</li>
-                                        <li>Scraping, copying, or replicating these assessments for third-party use</li>
-                                        <li>Sharing assessment results or methodologies with competitors</li>
-                                        <li>Using RTX technology to develop competing staffing solutions</li>
-                                        <li>Automating access to the Grit Assessment without written permission</li>
-                                    </ul>
-                                </div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                                    Violation of these terms may result in immediate termination of access and potential legal action.
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>Temporary staffing and workforce solutions</li>
+                                    <li>Direct-hire recruitment services</li>
+                                    <li>RTX (Resilient Talent Xchange) specialized placements</li>
+                                    <li>Workforce consulting and strategic planning</li>
+                                    <li>Skills assessments and candidate evaluation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">2. User Responsibilities</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <h3 class="text-xl font-bold mb-4 text-deep-black dark:text-white">For Job Seekers:</h3>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3 mb-6">
+                                    <li>Provide accurate and truthful information on applications and resumes</li>
+                                    <li>Notify BOSSS of any changes to contact information or availability</li>
+                                    <li>Comply with client company policies during assignments</li>
+                                    <li>Report workplace safety concerns or violations immediately</li>
+                                </ul>
+                                <h3 class="text-xl font-bold mb-4 text-deep-black dark:text-white">For Client Companies:</h3>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>Provide accurate job descriptions and requirements</li>
+                                    <li>Maintain safe working conditions for placed workers</li>
+                                    <li>Comply with all applicable employment laws</li>
+                                    <li>Provide timely feedback on candidate performance</li>
+                                    <li>Pay invoices according to agreed payment terms</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">3. Fees and Payment</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    <strong>For Client Companies:</strong>
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3 mb-6">
+                                    <li>Staffing fees are outlined in individual Service Agreements</li>
+                                    <li>Payment is due within 30 days of invoice date unless otherwise agreed</li>
+                                    <li>Late payments may incur interest charges at 1.5% per month</li>
+                                    <li>Client companies are responsible for all placement-related expenses (background checks, drug tests, etc.) unless specified otherwise</li>
+                                </ul>
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    <strong>For Job Seekers:</strong>
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>BOSSS does not charge fees to job seekers for placement services</li>
+                                    <li>Any required training, certifications, or equipment will be provided at no cost to the worker</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">4. Confidentiality</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    Both parties agree to maintain confidentiality of:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>Proprietary business information shared during the engagement</li>
+                                    <li>Candidate personal information and employment history</li>
+                                    <li>Client company hiring strategies and workforce planning</li>
+                                    <li>Compensation structures and fee arrangements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">5. Limitation of Liability</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    BOSSS makes reasonable efforts to match qualified candidates with suitable positions. However:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>We do not guarantee employment outcomes or specific placement durations</li>
+                                    <li>We are not liable for workplace incidents occurring at client company locations</li>
+                                    <li>Our liability for any claim is limited to fees paid for the specific service in question</li>
+                                    <li>We are not responsible for decisions made by client companies regarding hiring, termination, or workplace policies</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">6. Termination</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    Either party may terminate the service relationship:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>With 30 days written notice for ongoing staffing agreements</li>
+                                    <li>Immediately for breach of these Terms or applicable laws</li>
+                                    <li>Immediately if continuation would pose safety or legal risks</li>
+                                </ul>
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mt-4">
+                                    Termination does not relieve either party of obligations incurred prior to termination.
                                 </p>
                             </div>
                         </div>
 
                         <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">2</span>
-                                No Guarantee of Employment or Staffing
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                    Submission of a resume, completion of the <strong>"Grit Snapshot"</strong> assessment, or any form submission on bosssllc.com <strong>does not constitute an offer of employment</strong>.
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">7. Compliance with Laws</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    BOSSS and all service users agree to comply with:
                                 </p>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                        <h3 class="font-bold text-deep-black dark:text-white mb-2">For Candidates:</h3>
-                                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-1">
-                                            <li>Application review is discretionary</li>
-                                            <li>No guaranteed interview or placement</li>
-                                            <li>BOSSS reserves the right to decline representation</li>
-                                        </ul>
-                                    </div>
-                                    <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                        <h3 class="font-bold text-deep-black dark:text-white mb-2">For Clients:</h3>
-                                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-1">
-                                            <li>Inquiry does not guarantee candidate placement</li>
-                                            <li>Placement requires executed Master Service Agreement (MSA)</li>
-                                            <li>Candidate availability is subject to market conditions</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                                    BOSSS operates as a talent acquisition partner, not an employment agency. Final hiring decisions rest with the client organization.
-                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>California Senate Bill 446 (Temporary Worker Protection)</li>
+                                    <li>California Consumer Privacy Act (CCPA)</li>
+                                    <li>Fair Employment and Housing Act (FEHA)</li>
+                                    <li>Title VII of the Civil Rights Act</li>
+                                    <li>Americans with Disabilities Act (ADA)</li>
+                                    <li>All applicable federal, state, and local employment laws</li>
+                                </ul>
                             </div>
                         </div>
 
                         <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">3</span>
-                                AI-Driven Decision Support
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                    Users acknowledge that BOSSS utilizes AI algorithms to prioritize candidate matching based on the RTX Strategy. While our AI is supervised by human experts, BOSSS is not liable for algorithmic delays or technical errors in the initial screening phase.
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">8. Dispute Resolution</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    In the event of a dispute:
                                 </p>
-                                <div class="bg-yellow-50 dark:bg-yellow-900 dark:bg-opacity-30 border-l-4 border-yellow-500 p-4 mb-4">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Important Disclaimers:</h3>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>AI screening is a preliminary assessment tool, not a final hiring decision</li>
-                                        <li>All automated decisions are subject to human review upon request</li>
-                                        <li>Technical errors, system downtime, or data processing delays may occur</li>
-                                        <li>AI models are continuously updated and may affect historical assessments</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded border-l-4 border-orchid">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Your Rights:</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-2">
-                                        In accordance with California law (SB 243/AB 1898), you have the right to:
-                                    </p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Request a human review of any AI-driven employment decision</li>
-                                        <li>Receive an explanation of how AI influenced your candidacy</li>
-                                        <li>Challenge automated screening results</li>
-                                        <li>Access your Grit Scorecard data</li>
-                                    </ul>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400 mt-3">
-                                        To exercise these rights, contact: <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>
-                                    </p>
-                                </div>
+                                <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>Parties agree to first attempt resolution through good-faith negotiation</li>
+                                    <li>If negotiation fails, disputes will be resolved through binding arbitration in San Joaquin County, California</li>
+                                    <li>Each party bears its own legal costs unless otherwise determined by the arbitrator</li>
+                                    <li>Workers retain the right to file complaints with the California Labor Commissioner</li>
+                                </ol>
                             </div>
                         </div>
 
                         <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">4</span>
-                                Governing Law (California)
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                    These Terms of Service are governed by and construed in accordance with the laws of the <strong>State of California</strong>, without regard to its conflict of law provisions.
-                                </p>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-3">Jurisdiction & Venue:</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                        Any disputes arising from the use of bosssllc.com, the RTX Strategy, or related services shall be resolved in the courts of <strong>San Joaquin County, California</strong>.
-                                    </p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">
-                                        By using our services, you consent to the exclusive jurisdiction and venue of San Joaquin County courts for any legal proceedings related to these Terms of Service.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">5</span>
-                                Third-Party Logistics (3PL) Disclaimer
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                    BOSSS provides staffing solutions but <strong>does not own or operate</strong> the logistics facilities, warehouses, or transportation networks of our clients.
-                                </p>
-                                <div class="bg-red-50 dark:bg-red-900 dark:bg-opacity-30 border-l-4 border-red-500 p-4 mb-4">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Limitation of Liability:</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                        BOSSS is <strong>not responsible</strong> for:
-                                    </p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Site-specific safety protocols beyond our standard vetting requirements</li>
-                                        <li>Workplace injuries occurring at client facilities (covered by client's workers' compensation)</li>
-                                        <li>Equipment malfunctions or facility maintenance issues</li>
-                                        <li>Client-mandated policies, procedures, or operational decisions</li>
-                                        <li>Environmental conditions at client worksites</li>
-                                    </ul>
-                                </div>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">BOSSS Responsibilities:</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-2">We are committed to:</p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Thorough candidate vetting and Grit Scorecard assessment</li>
-                                        <li>Sim-to-Ship™ training for RTX-activated placements</li>
-                                        <li>Green Port Certification for zero-emission logistics roles</li>
-                                        <li>Ongoing compliance with California staffing regulations</li>
-                                    </ul>
-                                </div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">
-                                    Client facilities maintain independent responsibility for OSHA compliance, site safety training, and workplace incident management.
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">9. Modifications to Terms</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300">
+                                    BOSSS reserves the right to modify these Terms at any time. Material changes will be communicated via email to registered users at least 30 days before taking effect. Continued use of services after changes take effect constitutes acceptance of modified Terms.
                                 </p>
                             </div>
                         </div>
 
-                        <div>
-                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
-                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">6</span>
-                                Additional Terms
-                            </h2>
-                            <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg flex flex-col gap-4">
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Modifications to Terms</h3>
-                                    <p class="text-gray-700 dark:text-gray-300">
-                                        BOSSS reserves the right to modify these Terms of Service at any time. Changes will be posted on this page with an updated effective date. Continued use of our services constitutes acceptance of modified terms.
-                                    </p>
-                                </div>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Severability</h3>
-                                    <p class="text-gray-700 dark:text-gray-300">
-                                        If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.
-                                    </p>
-                                </div>
-                                <div class="bg-white dark:bg-gray-900 p-4 rounded">
-                                    <h3 class="font-bold text-deep-black dark:text-white mb-2">Entire Agreement</h3>
-                                    <p class="text-gray-700 dark:text-gray-300">
-                                        These Terms of Service, together with our Privacy Policy and any executed Master Service Agreements, constitute the entire agreement between you and BOSSS regarding the use of our services.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="bg-deep-black dark:bg-gray-950 text-white p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-4">Contact for Legal Questions</h3>
+                            <p class="text-lg mb-4">
+                                For questions about these Terms of Service, contact:
+                            </p>
+                            <a href="mailto:compliance@bosssllc.com" class="inline-flex items-center gap-2 text-orchid font-bold hover:underline">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                compliance@bosssllc.com
+                            </a>
                         </div>
 
                     </div>
-
-                    <div class="mt-12 bg-orchid text-white p-8 rounded-lg">
-                        <h2 class="text-2xl font-bold mb-4">Questions About These Terms?</h2>
-                        <p class="mb-6">
-                            If you have questions or concerns regarding these Terms of Service, please contact our compliance team.
-                        </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="mailto:compliance@bosssllc.com" class="bg-white text-orchid font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors text-center">
-                                Email Compliance Team
-                            </a>
-                            <a href="privacy.html" class="bg-deep-black dark:bg-gray-950 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-800 dark:hover:bg-black transition-colors text-center">
-                                View Privacy Policy
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -294,48 +285,93 @@
 
     <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="border-t border-gray-800 pt-8 text-center">
-                <p class="text-sm text-gray-400 mb-2">
-                    Document ID: BOSSS-MASTER-2026-CONSOLIDATED | Effective Date: March 31, 2026
-                </p>
-                <p class="text-sm text-gray-400">
-                    Authorized by: Kelley Crowell, CEO
-                </p>
-                <p class="text-gray-400 mt-4">&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS) LLC. All rights reserved.</p>
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto mb-4 dark:invert transition-all duration-300">
+                    <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
+                        <a href="index.html#services" class="text-gray-400 hover:text-orchid transition-colors">Services</a>
+                        <a href="rtx.html" class="text-gray-400 hover:text-orchid transition-colors">RTX Strategy</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights (SB 446)</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">Equal Employment Opportunity</a>
+                        <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <a href="https://www.linkedin.com/company/bosssllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-orchid transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        Follow us on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
+                <p class="mt-2">Document ID: BOSSS-TOS-2026 | Last Updated: April 3, 2026</p>
             </div>
         </div>
     </footer>
 
     <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIconMobile = document.getElementById('sunIconMobile');
+            const moonIconMobile = document.getElementById('moonIconMobile');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                sunIconMobile.classList.remove('hidden');
+                moonIconMobile.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                sunIconMobile.classList.add('hidden');
+                moonIconMobile.classList.remove('hidden');
+            }
+        }
+
         const darkModeToggle = document.getElementById('darkModeToggle');
-        const sunIcon = document.getElementById('sunIcon');
-        const moonIcon = document.getElementById('moonIcon');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
         const html = document.documentElement;
 
         const currentMode = localStorage.getItem('darkMode') || 'light';
         
         if (currentMode === 'dark') {
             html.classList.add('dark');
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
+            document.getElementById('sunIcon').classList.remove('hidden');
+            document.getElementById('moonIcon').classList.add('hidden');
+            document.getElementById('sunIconMobile').classList.remove('hidden');
+            document.getElementById('moonIconMobile').classList.add('hidden');
         }
 
-        darkModeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
-            
-            if (html.classList.contains('dark')) {
-                localStorage.setItem('darkMode', 'dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-            } else {
-                localStorage.setItem('darkMode', 'light');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-            }
-        });
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggleMobile.addEventListener('click', toggleDarkMode);
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         }
