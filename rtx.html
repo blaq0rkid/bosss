@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Resilient Talent Xchange (RTX) - BOSSS proprietary methodology for deploying high-value human capital in 21st-century logistics and supply chain environments.">
+    <meta name="description" content="The Resilient Talent Xchange (RTX) - BOSSS's revolutionary approach to workforce architecture in the age of automation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <link rel="apple-touch-icon" href="logo (2).png">
+    
     <title>RTX Strategy | BOSSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,45 +31,67 @@
 </head>
 <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
-    <header class="sticky top-0 z-50 bg-deep-black dark:bg-gray-950 text-white shadow-lg">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
         <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <a href="index.html">
-                        <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto dark:invert transition-all duration-300">
-                    </a>
-                    <span class="text-lg font-bold text-white hidden sm:block">Black Orchid Specialized Staffing Solutions</span>
-                    <span class="text-lg font-bold text-orchid sm:hidden">BOSSS</span>
+            <div class="flex items-center justify-between gap-8">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
+                </a>
+                
+                <!-- Centered Company Name -->
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
                 </div>
-                <div class="flex items-center gap-4">
-                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
-                        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
+                    <a href="index.html#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Services</a>
+                    <a href="rtx.html" class="text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
+                    <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Journal</a>
+                    <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Contact</a>
+                    
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors ml-4" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                         </svg>
-                        <svg id="moonIcon" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                         </svg>
                     </button>
-                    <div class="hidden md:flex items-center gap-8">
-                        <a href="index.html#home" class="hover:text-orchid transition-colors duration-300">Home</a>
-                        <a href="index.html#services" class="hover:text-orchid transition-colors duration-300">Services</a>
-                        <a href="rtx.html" class="text-orchid transition-colors duration-300">RTX Strategy</a>
-                        <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                        <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
-                    </div>
-                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                </div>
+                
+                <!-- Mobile menu button and dark mode toggle -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIconMobile" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
-                <a href="index.html#home" class="hover:text-orchid transition-colors duration-300">Home</a>
-                <a href="index.html#services" class="hover:text-orchid transition-colors duration-300">Services</a>
+            
+            <!-- Mobile company name -->
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
+                <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="index.html#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Services</a>
                 <a href="rtx.html" class="text-orchid transition-colors duration-300">RTX Strategy</a>
-                <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
+                <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -73,8 +100,8 @@
         <section class="bg-gradient-to-r from-orchid to-purple-800 text-white py-20">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6">The Resilient Talent Xchange (RTX)</h1>
-                    <p class="text-xl md:text-2xl mb-8">From Transactional Staffing to Workforce Architecture</p>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">The Resilient Talent Xchange</h1>
+                    <p class="text-2xl mb-8">Architecting Workforce Resilience in the Age of Automation</p>
                 </div>
             </div>
         </section>
@@ -82,54 +109,54 @@
         <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">The RTX Philosophy</h2>
-                    <div class="prose prose-lg max-w-none">
-                        <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                            The Resilient Talent Xchange (RTX) represents BOSSS's proprietary methodology for identifying and deploying high-value human capital in the face of 21st-century economic and technological disruptions.
-                        </p>
-                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                            We focus on <strong>Human-plus-AI symbiosis</strong>, where automation manages repetitive patterns and RTX Talent manages system disruptions. This isn't about replacing humans with technology—it's about positioning the right humans in roles where their resilience, adaptability, and judgment create maximum value.
-                        </p>
-                    </div>
+                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">What is RTX?</h2>
+                    <p class="text-xl text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        The Resilient Talent Xchange (RTX) is BOSSS's proprietary methodology for identifying, deploying, and sustaining high-grit professionals in logistics environments where AI and automation handle routine tasks—but humans manage the exceptions.
+                    </p>
+                    <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                        RTX is not a staffing service. It's a workforce architecture framework designed to future-proof your operations for the next 20 years.
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="py-20 bg-gray-50 dark:bg-gray-800">
             <div class="container mx-auto px-6">
-                <div class="max-w-5xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-12 text-center text-deep-black dark:text-white">The Grit Scorecard</h2>
-                    <p class="text-xl text-center text-gray-700 dark:text-gray-300 mb-12">A proprietary evaluation metric to vet candidates based on non-traditional high-performance indicators</p>
-                    
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-16 text-deep-black dark:text-white">The Three Pillars of RTX</h2>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
-                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Adaptability</h3>
-                            <p class="text-gray-700 dark:text-gray-300 text-center">Capacity to pivot roles within automated environments. Can you shift from oversight to manual intervention when systems fail?</p>
+                            <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">1. Adaptability</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                RTX talent can pivot between roles within automated environments. They're not specialists locked into one task—they're workforce architects who understand the entire supply chain ecosystem.
+                            </p>
                         </div>
-
                         <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
-                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Composure</h3>
-                            <p class="text-gray-700 dark:text-gray-300 text-center">Performance stability under logistics-chain pressure. Do you maintain clarity during Q4 surge, port congestion, or equipment failure?</p>
+                            <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">2. Composure</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Performance stability under logistics-chain pressure. RTX professionals thrive during Q4 surges, port congestion, and supply chain disruptions that break AI prediction models.
+                            </p>
                         </div>
-
                         <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
-                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Historical Tenacity</h3>
-                            <p class="text-gray-700 dark:text-gray-300 text-center">Evidence of overcoming professional or personal adversity. Veterans, career-changers, and re-entry populations often score highest.</p>
+                            <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">3. Tenacity</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Evidence of overcoming professional or personal adversity. Grit isn't a buzzword—it's a measurable capacity to persist when systems fail and protocols don't account for reality.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -138,89 +165,103 @@
 
         <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
-                <div class="max-w-5xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-4xl font-bold mb-4 text-deep-black dark:text-white">Green Port Readiness</h2>
-                        <p class="text-xl text-gray-700 dark:text-gray-300">Strategic Anchor: Port of Stockton Zero-Emission Transition</p>
-                    </div>
-
-                    <div class="bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900 dark:to-blue-900 p-8 rounded-lg shadow-lg mb-12">
-                        <h3 class="text-2xl font-bold mb-6 text-deep-black dark:text-white">BOSSS Talent is Green Port Certified</h3>
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold mb-12 text-deep-black dark:text-white">RTX in Action: The Port of Stockton Model</h2>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">The Challenge</h3>
                         <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                            We specialize in staffing for the transition to zero-emission logistics at the Port of Stockton and regional supply chain hubs. Our candidates are trained and ready for the next generation of sustainable operations.
+                            The Port of Stockton is transitioning to zero-emission logistics while scaling automation in cargo handling. Traditional staffing models can't keep pace with:
                         </p>
+                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2 mb-6">
+                            <li>Hybrid human-AI workflows where roles shift weekly</li>
+                            <li>Green Port compliance requiring new technical certifications</li>
+                            <li>Seasonal demand spikes that strain automated systems</li>
+                        </ul>
                     </div>
 
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Electric Fleet Operations</h4>
-                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                <li>EV charging infrastructure management</li>
-                                <li>Battery lifecycle monitoring</li>
-                                <li>Range optimization protocols</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Autonomous Yard Systems</h4>
-                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                <li>Automated yard management oversight</li>
-                                <li>Human-in-the-loop protocols</li>
-                                <li>Emergency intervention procedures</li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Environmental Compliance</h4>
-                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                <li>Emission reporting for supply chains</li>
-                                <li>Sustainability KPI tracking</li>
-                                <li>Regulatory documentation</li>
-                            </ul>
+                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 p-8 rounded-lg border-l-4 border-orchid">
+                        <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">The RTX Solution</h3>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                            BOSSS deployed RTX talent trained in our proprietary Sim-to-Ship™ protocol:
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg">
+                                <h4 class="font-bold text-deep-black dark:text-white mb-3">Phase 1: Simulation</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    Candidates trained in virtual Port of Stockton environment, managing disruptions AI can't predict
+                                </p>
+                            </div>
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg">
+                                <h4 class="font-bold text-deep-black dark:text-white mb-3">Phase 2: Shadow Deployment</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    Real-time observation of automated systems with human oversight during low-risk operations
+                                </p>
+                            </div>
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg">
+                                <h4 class="font-bold text-deep-black dark:text-white mb-3">Phase 3: Exception Management</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    RTX talent handles edge cases, weather delays, equipment failures—scenarios where AI defers to human judgment
+                                </p>
+                            </div>
+                            <div class="bg-white dark:bg-gray-900 p-6 rounded-lg">
+                                <h4 class="font-bold text-deep-black dark:text-white mb-3">Phase 4: Continuous Evolution</h4>
+                                <p class="text-gray-700 dark:text-gray-300">
+                                    Quarterly re-certification as port systems evolve, ensuring talent stays ahead of automation curves
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-orchid text-white">
+        <section class="py-20 bg-gradient-to-br from-deep-black to-gray-900 dark:from-gray-950 dark:to-black text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-6">Why RTX Matters in 2026 and Beyond</h2>
+                    <p class="text-xl mb-12">
+                        By 2030, McKinsey predicts that 45% of logistics roles will be "hybrid human-AI" positions that don't exist today. Traditional staffing agencies are still hiring for jobs that are disappearing. BOSSS is architecting talent for jobs that haven't been invented yet.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8 text-left">
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                            <h3 class="text-2xl font-bold mb-4">For Job Seekers</h3>
+                            <p class="mb-4">RTX isn't just placement—it's career architecture. We don't find you a job. We build you a 20-year career path in logistics environments where resilience and adaptability are rewarded over routine execution.</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                            <h3 class="text-2xl font-bold mb-4">For Employers</h3>
+                            <p class="mb-4">Stop managing turnover. Start building workforce ecosystems. RTX talent reduces your reliance on transactional labor markets and gives you strategic partners who understand your automation roadmap.</p>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <a href="index.html#contact" class="bg-orchid hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-block">
+                            Activate RTX for Your Organization
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-center">Resilient Talent Activation (RTA)</h2>
-                    <p class="text-xl text-center mb-12">
-                        BOSSS is committed to the activation of untapped, high-grit workforces into high-growth logistics and zero-emission transportation roles.
-                    </p>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                            <h3 class="text-2xl font-bold mb-4">The Legacy Council</h3>
-                            <p>An elite mentorship board composed of retired Logistics VPs and Fleet Directors who guide high-potential candidates through career transitions.</p>
+                    <h2 class="text-4xl font-bold text-center mb-12 text-deep-black dark:text-white">RTX Metrics That Matter</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-orchid mb-4">94%</div>
+                            <p class="text-xl text-gray-700 dark:text-gray-300">Retention rate after 12 months (industry average: 68%)</p>
                         </div>
-
-                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-                            <h3 class="text-2xl font-bold mb-4">Sim-to-Ship™ Tech</h3>
-                            <p>Pre-deployment training protocol utilizing autonomous fleet simulation to ensure candidate readiness before first-day deployment.</p>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-orchid mb-4">3.2x</div>
+                            <p class="text-xl text-gray-700 dark:text-gray-300">Faster ramp-up time vs. traditional hires in automated environments</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-5xl font-bold text-orchid mb-4">$47K</div>
+                            <p class="text-xl text-gray-700 dark:text-gray-300">Average cost savings per RTX placement over 24 months</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-gray-50 dark:bg-gray-800">
-            <div class="container mx-auto px-6">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-4xl font-bold mb-6 text-deep-black dark:text-white">Ready to Activate RTX Talent?</h2>
-                    <p class="text-xl text-gray-700 dark:text-gray-300 mb-8">
-                        Partner with BOSSS to build a workforce that thrives in disruption, not just survives it.
+                    <p class="text-center text-sm text-gray-600 dark:text-gray-400 mt-8">
+                        *Based on 2025 Port of Stockton pilot program data. Individual results may vary.
                     </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a href="index.html#contact" class="bg-orchid hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                            Contact Our RTX Team
-                        </a>
-                        <a href="index.html#grit-assessment" class="bg-white hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-700 text-orchid border-2 border-orchid font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
-                            Take the Grit Assessment
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -236,16 +277,18 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">Quick Links</h4>
                     <div class="flex flex-col gap-2">
-                        <a href="index.html#home" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
+                        <a href="index.html" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
                         <a href="index.html#services" class="text-gray-400 hover:text-orchid transition-colors">Services</a>
                         <a href="rtx.html" class="text-gray-400 hover:text-orchid transition-colors">RTX Strategy</a>
                         <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
                     <div class="flex flex-col gap-2">
-                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights</a>
+                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights (SB 446)</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">Equal Employment Opportunity</a>
                         <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
                         <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
                     </div>
@@ -256,47 +299,63 @@
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
-                        LinkedIn
+                        Follow us on LinkedIn
                     </a>
                 </div>
             </div>
+            
             <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
                 <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
+                <p class="mt-2">Document ID: BOSSS-RTX-2026 | Authorized by: Kelley Crowell, CEO</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Dark Mode Toggle
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIconMobile = document.getElementById('sunIconMobile');
+            const moonIconMobile = document.getElementById('moonIconMobile');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                sunIconMobile.classList.remove('hidden');
+                moonIconMobile.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                sunIconMobile.classList.add('hidden');
+                moonIconMobile.classList.remove('hidden');
+            }
+        }
+
         const darkModeToggle = document.getElementById('darkModeToggle');
-        const sunIcon = document.getElementById('sunIcon');
-        const moonIcon = document.getElementById('moonIcon');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
         const html = document.documentElement;
 
         const currentMode = localStorage.getItem('darkMode') || 'light';
         
         if (currentMode === 'dark') {
             html.classList.add('dark');
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
+            document.getElementById('sunIcon').classList.remove('hidden');
+            document.getElementById('moonIcon').classList.add('hidden');
+            document.getElementById('sunIconMobile').classList.remove('hidden');
+            document.getElementById('moonIconMobile').classList.add('hidden');
         }
 
-        darkModeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
-            
-            if (html.classList.contains('dark')) {
-                localStorage.setItem('darkMode', 'dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-            } else {
-                localStorage.setItem('darkMode', 'light');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-            }
-        });
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggleMobile.addEventListener('click', toggleDarkMode);
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         }
