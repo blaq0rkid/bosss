@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equal Employment Opportunity Policy - BOSSS is committed to equal employment opportunities for all individuals regardless of protected characteristics.">
+    <title>Equal Employment Opportunity | BOSSS</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <link rel="apple-touch-icon" href="logo (2).png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'orchid': '#9932CC',
+                        'deep-black': '#000000',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'Montserrat', 'Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between gap-8">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
+                </a>
+                
+                <!-- Centered Company Name -->
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
+                    <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
+                    <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Journal</a>
+                    <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Contact</a>
+                    
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors ml-4" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Mobile menu button and dark mode toggle -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIconMobile" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile company name -->
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
+                <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-deep-black to-gray-900 dark:from-gray-950 dark:to-black text-white py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Equal Employment Opportunity</h1>
+                    <p class="text-xl">Our Commitment to Diversity, Inclusion & Fairness</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    
+                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-8 rounded-lg mb-12">
+                        <div class="flex items-center gap-4 mb-4">
+                            <svg class="w-12 h-12 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Effective Date: April 3, 2026</p>
+                                <h2 class="text-2xl font-bold text-deep-black dark:text-white">EEO Policy Statement</h2>
+                            </div>
+                        </div>
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            At Black Orchid Specialized Staffing Solutions (BOSSS), we believe that resilience and grit are found in every background. We are committed to a policy of equal employment opportunity for all applicants and employees.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-12">
+                        
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
+                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">1</span>
+                                Our Commitment
+                            </h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    BOSSS provides equal employment opportunities to all individuals without regard to <strong>race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, genetics, protected veteran status</strong>, or any other characteristic protected by federal, state, or local laws.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
+                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">2</span>
+                                Scope of Policy
+                            </h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                                    This policy applies to all terms and conditions of employment, including:
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded border-l-4 border-orchid">
+                                        <h3 class="font-bold text-deep-black dark:text-white mb-2">Talent Acquisition</h3>
+                                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-1">
+                                            <li>Recruiting and hiring</li>
+                                            <li>Placements and assignments</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded border-l-4 border-orchid">
+                                        <h3 class="font-bold text-deep-black dark:text-white mb-2">Career Development</h3>
+                                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-1">
+                                            <li>Promotion and termination</li>
+                                            <li>Compensation and training</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded border-l-4 border-orchid md:col-span-2">
+                                        <h3 class="font-bold text-deep-black dark:text-white mb-2">Workplace Culture</h3>
+                                        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-1">
+                                            <li>Social and recreational programs</li>
+                                            <li>All other terms and conditions of employment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
+                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">3</span>
+                                Workforce Architects of Inclusion
+                            </h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                                    As <strong>"Workforce Architects,"</strong> we specifically value the diverse perspectives that high-grit, resilient professionals bring to the logistics and supply chain industry. We actively seek to build a diverse talent pool that reflects the Port of Stockton community and the evolving needs of zero-emission logistics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
+                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">4</span>
+                                Reasonable Accommodations
+                            </h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                                    BOSSS is committed to the full inclusion of all qualified individuals. As part of this commitment, we will ensure that persons with disabilities are provided reasonable accommodations.
+                                </p>
+                                <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 p-6 rounded-lg border-l-4 border-orchid">
+                                    <p class="text-gray-700 dark:text-gray-300 mb-3">
+                                        <strong>Need an accommodation?</strong>
+                                    </p>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        If a reasonable accommodation is needed to participate in the job application or interview process, please contact us at:
+                                    </p>
+                                    <a href="mailto:info@bosssllc.com" class="inline-flex items-center gap-2 text-orchid font-bold hover:underline">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                        info@bosssllc.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white flex items-center gap-3">
+                                <span class="bg-orchid text-white w-10 h-10 rounded-full flex items-center justify-center text-xl">5</span>
+                                AI Transparency & Fairness
+                            </h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                                    In accordance with California 2026 standards, while BOSSS utilizes AI-assisted tools for candidate matching, these systems are regularly audited for bias to ensure that our technology supports—and does not hinder—our commitment to equal opportunity.
+                                </p>
+                                <div class="bg-white dark:bg-gray-900 p-6 rounded border-l-4 border-orchid">
+                                    <h3 class="font-bold text-deep-black dark:text-white mb-3 flex items-center gap-2">
+                                        <svg class="w-6 h-6 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                        </svg>
+                                        Your Rights Regarding AI
+                                    </h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        Candidates always have the right to request a manual human review of any AI-influenced screening decision.
+                                    </p>
+                                    <div class="flex flex-col sm:flex-row gap-4">
+                                        <a href="privacy.html#ai-transparency" class="inline-block bg-orchid text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors text-center">
+                                            Learn About Our AI Use
+                                        </a>
+                                        <a href="mailto:compliance@bosssllc.com?subject=AI Review Request" class="inline-block bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors text-center">
+                                            Request AI Review
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-16 bg-deep-black dark:bg-gray-950 text-white p-8 rounded-lg">
+                        <div class="border-b border-gray-700 pb-6 mb-6">
+                            <h3 class="text-2xl font-bold mb-4">Policy Authorization</h3>
+                            <div class="flex flex-col gap-2">
+                                <p><strong>Authorized by:</strong> Kelley Crowell, CEO</p>
+                                <p><strong>Company:</strong> Black Orchid Specialized Staffing Solutions (BOSSS)</p>
+                                <p><strong>Effective Date:</strong> April 3, 2026</p>
+                            </div>
+                        </div>
+                        <div class="text-sm text-gray-400">
+                            <p>This EEO policy is in compliance with federal, state, and local employment laws, including Title VII of the Civil Rights Act of 1964, the Americans with Disabilities Act (ADA), the Age Discrimination in Employment Act (ADEA), and California Fair Employment and Housing Act (FEHA).</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">Questions or Concerns?</h3>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                            If you have questions about our EEO policy or wish to report a concern, please contact our compliance team.
+                        </p>
+                        <a href="mailto:compliance@bosssllc.com" class="inline-block bg-orchid text-white font-bold py-4 px-8 rounded-lg hover:bg-purple-700 transition-colors">
+                            Contact Compliance Team
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto mb-4 dark:invert transition-all duration-300">
+                    <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
+                        <a href="rtx.html" class="text-gray-400 hover:text-orchid transition-colors">RTX Strategy</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights (SB 446)</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">Equal Employment Opportunity</a>
+                        <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <a href="https://www.linkedin.com/company/bosssllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-orchid transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        Follow us on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
+                <p class="mt-2">Document ID: BOSSS-EEO-2026 | Effective: April 3, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIconMobile = document.getElementById('sunIconMobile');
+            const moonIconMobile = document.getElementById('moonIconMobile');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                sunIconMobile.classList.remove('hidden');
+                moonIconMobile.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                sunIconMobile.classList.add('hidden');
+                moonIconMobile.classList.remove('hidden');
+            }
+        }
+
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+        const html = document.documentElement;
+
+        const currentMode = localStorage.getItem('darkMode') || 'light';
+        
+        if (currentMode === 'dark') {
+            html.classList.add('dark');
+            document.getElementById('sunIcon').classList.remove('hidden');
+            document.getElementById('moonIcon').classList.add('hidden');
+            document.getElementById('sunIconMobile').classList.remove('hidden');
+            document.getElementById('moonIconMobile').classList.add('hidden');
+        }
+
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+    </script>
+</body>
+</html>
