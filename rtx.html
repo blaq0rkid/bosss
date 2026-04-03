@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -23,29 +24,40 @@
         }
     </script>
 </head>
-<body class="font-sans bg-white text-gray-900">
+<body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
-    <header class="sticky top-0 z-50 bg-deep-black text-white shadow-lg">
+    <header class="sticky top-0 z-50 bg-deep-black dark:bg-gray-950 text-white shadow-lg">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center">
+                <div class="flex items-center gap-3">
                     <a href="index.html">
-                        <img src="logo.png" alt="BOSSS Logo" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span style="display:none;" class="text-2xl font-bold text-orchid">BOSSS</span>
+                        <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto dark:invert transition-all duration-300">
                     </a>
+                    <span class="text-lg font-bold text-white hidden sm:block">Black Orchid Specialized Staffing Solutions</span>
+                    <span class="text-lg font-bold text-orchid sm:hidden">BOSSS</span>
                 </div>
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#home" class="hover:text-orchid transition-colors duration-300">Home</a>
-                    <a href="index.html#services" class="hover:text-orchid transition-colors duration-300">Services</a>
-                    <a href="rtx.html" class="text-orchid transition-colors duration-300">RTX Strategy</a>
-                    <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                    <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
+                <div class="flex items-center gap-4">
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a href="index.html#home" class="hover:text-orchid transition-colors duration-300">Home</a>
+                        <a href="index.html#services" class="hover:text-orchid transition-colors duration-300">Services</a>
+                        <a href="rtx.html" class="text-orchid transition-colors duration-300">RTX Strategy</a>
+                        <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
+                        <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact Us</a>
+                    </div>
+                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
                 <a href="index.html#home" class="hover:text-orchid transition-colors duration-300">Home</a>
@@ -67,15 +79,15 @@
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-8 text-deep-black">The RTX Philosophy</h2>
+                    <h2 class="text-4xl font-bold mb-8 text-deep-black dark:text-white">The RTX Philosophy</h2>
                     <div class="prose prose-lg max-w-none">
-                        <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                        <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                             The Resilient Talent Xchange (RTX) represents BOSSS's proprietary methodology for identifying and deploying high-value human capital in the face of 21st-century economic and technological disruptions.
                         </p>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                             We focus on <strong>Human-plus-AI symbiosis</strong>, where automation manages repetitive patterns and RTX Talent manages system disruptions. This isn't about replacing humans with technology—it's about positioning the right humans in roles where their resilience, adaptability, and judgment create maximum value.
                         </p>
                     </div>
@@ -83,84 +95,84 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gray-50">
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
             <div class="container mx-auto px-6">
                 <div class="max-w-5xl mx-auto">
-                    <h2 class="text-4xl font-bold mb-12 text-center text-deep-black">The Grit Scorecard</h2>
-                    <p class="text-xl text-center text-gray-700 mb-12">A proprietary evaluation metric to vet candidates based on non-traditional high-performance indicators</p>
+                    <h2 class="text-4xl font-bold mb-12 text-center text-deep-black dark:text-white">The Grit Scorecard</h2>
+                    <p class="text-xl text-center text-gray-700 dark:text-gray-300 mb-12">A proprietary evaluation metric to vet candidates based on non-traditional high-performance indicators</p>
                     
                     <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-orchid">
+                        <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
                             <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black">Adaptability</h3>
-                            <p class="text-gray-700 text-center">Capacity to pivot roles within automated environments. Can you shift from oversight to manual intervention when systems fail?</p>
+                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Adaptability</h3>
+                            <p class="text-gray-700 dark:text-gray-300 text-center">Capacity to pivot roles within automated environments. Can you shift from oversight to manual intervention when systems fail?</p>
                         </div>
 
-                        <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-orchid">
+                        <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
                             <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black">Composure</h3>
-                            <p class="text-gray-700 text-center">Performance stability under logistics-chain pressure. Do you maintain clarity during Q4 surge, port congestion, or equipment failure?</p>
+                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Composure</h3>
+                            <p class="text-gray-700 dark:text-gray-300 text-center">Performance stability under logistics-chain pressure. Do you maintain clarity during Q4 surge, port congestion, or equipment failure?</p>
                         </div>
 
-                        <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-orchid">
+                        <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg border-t-4 border-orchid">
                             <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6 mx-auto">
                                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black">Historical Tenacity</h3>
-                            <p class="text-gray-700 text-center">Evidence of overcoming professional or personal adversity. Veterans, career-changers, and re-entry populations often score highest.</p>
+                            <h3 class="text-2xl font-bold mb-4 text-center text-deep-black dark:text-white">Historical Tenacity</h3>
+                            <p class="text-gray-700 dark:text-gray-300 text-center">Evidence of overcoming professional or personal adversity. Veterans, career-changers, and re-entry populations often score highest.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-white">
+        <section class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6">
                 <div class="max-w-5xl mx-auto">
                     <div class="text-center mb-12">
-                        <h2 class="text-4xl font-bold mb-4 text-deep-black">Green Port Readiness</h2>
-                        <p class="text-xl text-gray-700">Strategic Anchor: Port of Stockton Zero-Emission Transition</p>
+                        <h2 class="text-4xl font-bold mb-4 text-deep-black dark:text-white">Green Port Readiness</h2>
+                        <p class="text-xl text-gray-700 dark:text-gray-300">Strategic Anchor: Port of Stockton Zero-Emission Transition</p>
                     </div>
 
-                    <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-lg shadow-lg mb-12">
-                        <h3 class="text-2xl font-bold mb-6 text-deep-black">BOSSS Talent is Green Port Certified</h3>
-                        <p class="text-lg text-gray-700 mb-6">
+                    <div class="bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900 dark:to-blue-900 p-8 rounded-lg shadow-lg mb-12">
+                        <h3 class="text-2xl font-bold mb-6 text-deep-black dark:text-white">BOSSS Talent is Green Port Certified</h3>
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
                             We specialize in staffing for the transition to zero-emission logistics at the Port of Stockton and regional supply chain hubs. Our candidates are trained and ready for the next generation of sustainable operations.
                         </p>
                     </div>
 
                     <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">Electric Fleet Operations</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Electric Fleet Operations</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>EV charging infrastructure management</li>
                                 <li>Battery lifecycle monitoring</li>
                                 <li>Range optimization protocols</li>
                             </ul>
                         </div>
 
-                        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">Autonomous Yard Systems</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Autonomous Yard Systems</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Automated yard management oversight</li>
                                 <li>Human-in-the-loop protocols</li>
                                 <li>Emergency intervention procedures</li>
                             </ul>
                         </div>
 
-                        <div class="bg-white p-6 rounded-lg shadow border-l-4 border-green-600">
-                            <h4 class="text-xl font-bold mb-3 text-deep-black">Environmental Compliance</h4>
-                            <ul class="list-disc list-inside text-gray-700 flex flex-col gap-2">
+                        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow border-l-4 border-green-600">
+                            <h4 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Environmental Compliance</h4>
+                            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
                                 <li>Emission reporting for supply chains</li>
                                 <li>Sustainability KPI tracking</li>
                                 <li>Regulatory documentation</li>
@@ -194,18 +206,18 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gray-50">
+        <section class="py-20 bg-gray-50 dark:bg-gray-800">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-4xl font-bold mb-6 text-deep-black">Ready to Activate RTX Talent?</h2>
-                    <p class="text-xl text-gray-700 mb-8">
+                    <h2 class="text-4xl font-bold mb-6 text-deep-black dark:text-white">Ready to Activate RTX Talent?</h2>
+                    <p class="text-xl text-gray-700 dark:text-gray-300 mb-8">
                         Partner with BOSSS to build a workforce that thrives in disruption, not just survives it.
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a href="index.html#contact" class="bg-orchid hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
                             Contact Our RTX Team
                         </a>
-                        <a href="index.html#grit-assessment" class="bg-white hover:bg-gray-100 text-orchid border-2 border-orchid font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                        <a href="index.html#grit-assessment" class="bg-white hover:bg-gray-100 dark:bg-gray-900 dark:hover:bg-gray-700 text-orchid border-2 border-orchid font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
                             Take the Grit Assessment
                         </a>
                     </div>
@@ -214,12 +226,11 @@
         </section>
     </main>
 
-    <footer class="bg-deep-black text-white py-12">
+    <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <img src="logo.png" alt="BOSSS Logo" class="h-12 w-auto mb-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span style="display:none;" class="text-2xl font-bold text-orchid">BOSSS</span>
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto mb-4 dark:invert transition-all duration-300">
                     <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
                 </div>
                 <div>
@@ -256,6 +267,34 @@
     </footer>
 
     <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const html = document.documentElement;
+
+        const currentMode = localStorage.getItem('darkMode') || 'light';
+        
+        if (currentMode === 'dark') {
+            html.classList.add('dark');
+            sunIcon.classList.remove('hidden');
+            moonIcon.classList.add('hidden');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        });
+
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenuBtn && mobileMenu) {
