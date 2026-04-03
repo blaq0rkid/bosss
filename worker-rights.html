@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Worker Rights Notice - BOSSS is committed to protecting the rights of all talent placed through our services in accordance with California Law SB 446.">
+    <meta name="description" content="Worker Rights at BOSSS - California SB 446 Compliance and Worker Protections">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <link rel="apple-touch-icon" href="logo (2).png">
+    
     <title>Worker Rights | BOSSS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -26,43 +31,65 @@
 </head>
 <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
-    <header class="sticky top-0 z-50 bg-deep-black dark:bg-gray-950 text-white shadow-lg">
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
         <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <a href="index.html">
-                        <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto dark:invert transition-all duration-300">
-                    </a>
-                    <span class="text-lg font-bold text-white hidden sm:block">Black Orchid Specialized Staffing Solutions</span>
-                    <span class="text-lg font-bold text-orchid sm:hidden">BOSSS</span>
+            <div class="flex items-center justify-between gap-8">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
+                </a>
+                
+                <!-- Centered Company Name -->
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
                 </div>
-                <div class="flex items-center gap-4">
-                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
-                        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
+                    <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
+                    <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Journal</a>
+                    <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Contact</a>
+                    
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors ml-4" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
                         </svg>
-                        <svg id="moonIcon" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
                         </svg>
                     </button>
-                    <div class="hidden md:flex items-center gap-8">
-                        <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
-                        <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                        <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                        <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
-                    </div>
-                    <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                </div>
+                
+                <!-- Mobile menu button and dark mode toggle -->
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIconMobile" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
-                <a href="index.html" class="hover:text-orchid transition-colors duration-300">Home</a>
-                <a href="rtx.html" class="hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                <a href="blog.html" class="hover:text-orchid transition-colors duration-300">Journal</a>
-                <a href="index.html#contact" class="hover:text-orchid transition-colors duration-300">Contact</a>
+            
+            <!-- Mobile company name -->
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
+                <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -71,8 +98,8 @@
         <section class="bg-gradient-to-r from-deep-black to-gray-900 dark:from-gray-950 dark:to-black text-white py-16">
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Your Rights as a Worker</h1>
-                    <p class="text-xl">Annual Workplace Rights Notice (California SB 446 Compliance)</p>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Worker Rights & Protections</h1>
+                    <p class="text-xl">California SB 446 Compliance & Your Rights as a Temporary Worker</p>
                 </div>
             </div>
         </section>
@@ -81,100 +108,151 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto">
                     <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-8 rounded-lg mb-12">
-                        <h2 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">BOSSS Prioritizes Your Protection</h2>
+                        <h2 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">Your Rights Matter</h2>
                         <p class="text-lg text-gray-700 dark:text-gray-300">
-                            In accordance with California Law (SB 446, effective 2026), all talent placed by Black Orchid Specialized Staffing Solutions are entitled to full disclosure of rights regarding workplace safety, fair compensation, and AI-augmented employment decisions.
+                            At BOSSS, we believe that transparency and worker empowerment are foundational to ethical staffing. California's SB 446 mandates specific protections for temporary workers, and we exceed these standards as part of our commitment to workforce architecture—not exploitation.
                         </p>
                     </div>
 
-                    <div class="flex flex-col gap-8">
-                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 bg-orchid rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-3 text-deep-black dark:text-white">Retaliation Protection</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                        You cannot be penalized, demoted, or terminated for reporting safety concerns, wage discrepancies, or workplace violations. California law provides robust protections for whistleblowers.
+                    <div class="flex flex-col gap-12">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">What is SB 446?</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+                                    Senate Bill 446 (effective January 1, 2026) strengthens protections for workers placed by staffing agencies in California. It requires agencies to provide clear, written disclosure of:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-3">
+                                    <li>Actual wages and benefits for each assignment</li>
+                                    <li>Details about the client company and job location</li>
+                                    <li>Expected duration of assignment</li>
+                                    <li>Any fees deducted from worker pay</li>
+                                    <li>Safety requirements and workers' compensation coverage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">How BOSSS Complies (and Goes Beyond)</h2>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-orchid">
+                                    <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Transparent Pay Structure</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        Before you accept any assignment, you'll receive a written breakdown of your hourly rate, overtime eligibility, and any performance bonuses. No hidden fees, no surprises.
                                     </p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Report safety hazards without fear of job loss</li>
-                                        <li>Question wage calculations or missing pay</li>
-                                        <li>Request accommodations for disabilities</li>
-                                        <li>File complaints with state labor authorities</li>
-                                    </ul>
+                                </div>
+                                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-orchid">
+                                    <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Client Company Details</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        You have the right to know who you're working for. We provide full client company information, including safety records and workplace culture details.
+                                    </p>
+                                </div>
+                                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-orchid">
+                                    <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Assignment Duration</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        We provide realistic timelines—not vague "temp-to-perm" promises. If an assignment is 90 days, we tell you. If it could extend, we explain the conditions.
+                                    </p>
+                                </div>
+                                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border-l-4 border-orchid">
+                                    <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white">Zero Deductions Policy</h3>
+                                    <p class="text-gray-700 dark:text-gray-300">
+                                        BOSSS does not deduct fees for training, uniforms, or equipment from worker pay. If the client requires specialized gear, we cover it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 bg-orchid rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-3 text-deep-black dark:text-white">Workers' Compensation</h3>
-                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                        Coverage is provided from Day 1 of any BOSSS assignment. If you are injured on the job, you have the right to medical care and wage replacement.
-                                    </p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Immediate medical treatment for work-related injuries</li>
-                                        <li>Compensation for lost wages during recovery</li>
-                                        <li>Protection from employer retaliation for filing claims</li>
-                                        <li>Right to choose your treating physician after 30 days</li>
-                                    </ul>
-                                    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
-                                        <strong>Report injuries immediately:</strong> <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>
-                                    </p>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Your Specific Rights Under SB 446</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <div class="flex flex-col gap-6">
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white flex items-center gap-3">
+                                            <svg class="w-6 h-6 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            Right to Written Disclosure
+                                        </h3>
+                                        <p class="text-gray-700 dark:text-gray-300 ml-9">
+                                            You must receive written notice of all assignment terms before starting work, in a language you understand.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white flex items-center gap-3">
+                                            <svg class="w-6 h-6 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            Right to Refuse Unsafe Work
+                                        </h3>
+                                        <p class="text-gray-700 dark:text-gray-300 ml-9">
+                                            You can refuse assignments that pose health or safety risks without penalty or retaliation.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white flex items-center gap-3">
+                                            <svg class="w-6 h-6 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            Right to Workers' Compensation
+                                        </h3>
+                                        <p class="text-gray-700 dark:text-gray-300 ml-9">
+                                            If you're injured on the job, you're covered by workers' comp—and BOSSS will guide you through the claims process.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white flex items-center gap-3">
+                                            <svg class="w-6 h-6 text-orchid" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            Right to Report Violations
+                                        </h3>
+                                        <p class="text-gray-700 dark:text-gray-300 ml-9">
+                                            You can report suspected violations to the California Labor Commissioner without fear of retaliation.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 bg-orchid rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold mb-3 text-deep-black dark:text-white">Fair AI Review</h3>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">How to Report Concerns</h2>
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 p-6 rounded-lg border-l-4 border-orchid">
+                                    <h3 class="text-xl font-bold mb-4 text-deep-black dark:text-white">Internal BOSSS Compliance</h3>
                                     <p class="text-gray-700 dark:text-gray-300 mb-4">
-                                        You have the right to request a manual human audit of any AI-driven screening decision that affects your employment, promotion, or termination.
+                                        If you believe your rights have been violated or you have questions about an assignment, contact:
                                     </p>
-                                    <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
-                                        <li>Request explanation of AI-driven decisions</li>
-                                        <li>Challenge automated rejections or scoring</li>
-                                        <li>Receive human review within 10 business days</li>
-                                        <li>Access your candidate data and Grit Scorecard results</li>
-                                    </ul>
-                                    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
-                                        <strong>Request AI review:</strong> <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>
+                                    <a href="mailto:compliance@bosssllc.com" class="inline-flex items-center gap-2 text-orchid font-bold hover:underline">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                        compliance@bosssllc.com
+                                    </a>
+                                </div>
+                                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-l-4 border-gray-400 dark:border-gray-600">
+                                    <h3 class="text-xl font-bold mb-4 text-deep-black dark:text-white">California Labor Commissioner</h3>
+                                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                        You also have the right to file a complaint directly with the state:
                                     </p>
+                                    <a href="https://www.dir.ca.gov/dlse/howtofilewageclaim.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-orchid font-bold hover:underline">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                        </svg>
+                                        File a Wage Claim
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="mt-12 bg-deep-black dark:bg-gray-950 text-white p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold mb-4">Additional Resources</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-bold mb-2">California Labor Commissioner</h4>
-                                <p class="text-gray-300 dark:text-gray-400 text-sm mb-2">For wage claims and labor law violations</p>
-                                <a href="https://www.dir.ca.gov/dlse/" target="_blank" rel="noopener noreferrer" class="text-orchid hover:underline">www.dir.ca.gov/dlse/</a>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-2">Cal/OSHA</h4>
-                                <p class="text-gray-300 dark:text-gray-400 text-sm mb-2">For workplace safety concerns</p>
-                                <a href="https://www.dir.ca.gov/dosh/" target="_blank" rel="noopener noreferrer" class="text-orchid hover:underline">www.dir.ca.gov/dosh/</a>
-                            </div>
+                        <div class="bg-deep-black dark:bg-gray-950 text-white p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-4">The BOSSS Difference</h3>
+                            <p class="text-lg mb-6">
+                                Many staffing agencies see SB 446 as a compliance burden. We see it as a baseline. Our RTX methodology is built on the principle that resilient talent deserves resilient support—legal protections, career development, and respect.
+                            </p>
+                            <p class="text-lg font-bold">
+                                If you're a temporary worker and you feel undervalued, underinformed, or unsafe, that's not just a legal issue—it's a failure of workforce architecture. And BOSSS doesn't architect failures.
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -183,43 +261,93 @@
 
     <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="text-center text-sm text-gray-400">
-                <p class="mb-4">This notice is provided in compliance with California Senate Bill 446 (2026)</p>
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto mb-4 dark:invert transition-all duration-300">
+                    <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
+                        <a href="index.html#services" class="text-gray-400 hover:text-orchid transition-colors">Services</a>
+                        <a href="rtx.html" class="text-gray-400 hover:text-orchid transition-colors">RTX Strategy</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights (SB 446)</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">Equal Employment Opportunity</a>
+                        <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <a href="https://www.linkedin.com/company/bosssllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-orchid transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        Follow us on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
                 <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
+                <p class="mt-2">Document ID: BOSSS-SB446-2026 | Compliant with California SB 446</p>
             </div>
         </div>
     </footer>
 
     <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIconMobile = document.getElementById('sunIconMobile');
+            const moonIconMobile = document.getElementById('moonIconMobile');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                sunIconMobile.classList.remove('hidden');
+                moonIconMobile.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                sunIconMobile.classList.add('hidden');
+                moonIconMobile.classList.remove('hidden');
+            }
+        }
+
         const darkModeToggle = document.getElementById('darkModeToggle');
-        const sunIcon = document.getElementById('sunIcon');
-        const moonIcon = document.getElementById('moonIcon');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
         const html = document.documentElement;
 
         const currentMode = localStorage.getItem('darkMode') || 'light';
         
         if (currentMode === 'dark') {
             html.classList.add('dark');
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
+            document.getElementById('sunIcon').classList.remove('hidden');
+            document.getElementById('moonIcon').classList.add('hidden');
+            document.getElementById('sunIconMobile').classList.remove('hidden');
+            document.getElementById('moonIconMobile').classList.add('hidden');
         }
 
-        darkModeToggle.addEventListener('click', () => {
-            html.classList.toggle('dark');
-            
-            if (html.classList.contains('dark')) {
-                localStorage.setItem('darkMode', 'dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-            } else {
-                localStorage.setItem('darkMode', 'light');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-            }
-        });
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggleMobile.addEventListener('click', toggleDarkMode);
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
         }
