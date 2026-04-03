@@ -38,37 +38,42 @@
 <body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     
     <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 text-gray-900 dark:text-white shadow-lg transition-colors duration-300">
-        <nav class="container mx-auto px-6 py-6">
-            <div class="flex items-center justify-between">
-                <div class="flex-1 flex justify-center md:justify-start">
-                    <a href="index.html">
-                        <img src="logo (2).png" alt="BOSSS Logo" class="h-40 w-auto dark:invert transition-all duration-300">
-                    </a>
-                </div>
-                <div class="flex items-center gap-4">
-                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
-                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
-                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                        </svg>
-                    </button>
-                    <div class="hidden md:flex items-center gap-8">
-                        <a href="#home" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
-                        <a href="#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Services</a>
-                        <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
-                        <a href="#journal" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
-                        <a href="#grit-assessment" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Grit Assessment</a>
-                        <a href="#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact Us</a>
-                    </div>
-                    <button id="mobile-menu-btn" class="md:hidden text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+        <nav class="container mx-auto px-6 py-4">
+            <!-- Top row: Dark mode toggle and mobile menu -->
+            <div class="flex items-center justify-end gap-4 mb-4">
+                <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                    <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
+            
+            <!-- Logo centered and wide -->
+            <div class="flex justify-center mb-4">
+                <a href="index.html" class="w-full max-w-4xl">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="w-full h-auto dark:invert transition-all duration-300">
+                </a>
+            </div>
+            
+            <!-- Navigation links -->
+            <div class="hidden md:flex items-center justify-center gap-8">
+                <a href="#home" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Services</a>
+                <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                <a href="#journal" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="#grit-assessment" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Grit Assessment</a>
+                <a href="#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact Us</a>
+            </div>
+            
+            <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-4">
                 <a href="#home" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
                 <a href="#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Services</a>
@@ -110,7 +115,7 @@
                     <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-orchid">
                         <div class="w-16 h-16 bg-orchid rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">Recruitment Solutions</h3>
