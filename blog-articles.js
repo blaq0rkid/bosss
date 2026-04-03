@@ -11,29 +11,7 @@ const blogArticles = [
     readTime: "6 min",    
     category: "Leadership",    
     slug: "skills-based-talent-acquisition-2026"    
-  },  
-  {    
-    id: "temp-to-hire-vs-direct-hire-2026",    
-    title: "Temp-to-Hire vs. Direct Hire: Which Is Better For Your 2026 Workforce Agility?",    
-    excerpt: "Workforce Architecture is the new stability. Explore how to balance agility and retention in a volatile market using the BOSSS stabilization model.",    
-    image: "https://cdn.marblism.com/pWzbhKg3DAu.webp",     
-    imageAlt: "A conceptual image representing workforce agility and structural balance in a modern corporate setting.",    
-    date: "2026-04-02",    
-    readTime: "8 min",    
-    category: "Workforce",    
-    slug: "temp-to-hire-vs-direct-hire-2026-workforce-agility"    
-  },  
-  {    
-    id: "7-mistakes-ai-talent-acquisition",    
-    title: "7 Mistakes You’re Making with AI Talent Acquisition Strategies",    
-    excerpt: "Stop letting algorithms ruin your culture. Learn how to humanize your AI recruiting strategy with the BOSSS 'Human-plus-AI' synergy model.",    
-    image: "https://cdn.marblism.com/rtRs5S1S6bW.webp",     
-    imageAlt: "A futuristic office setting showing a blend of AI data screens and human collaboration.",    
-    date: "2026-04-02",    
-    readTime: "7 min",    
-    category: "Recruitment",    
-    slug: "7-mistakes-ai-talent-acquisition"    
-  },  
+  },
   {    
     id: "rtx-future-logistics-resilient",    
     title: "RTX: Why the Future of Logistics isn't Just Automated—It's Resilient",    
