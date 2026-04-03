@@ -45,8 +45,13 @@
                     <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
                 </a>
                 
+                <!-- Centered Company Name -->
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+                </div>
+                
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center gap-6 flex-1 justify-end">
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
                     <a href="#home" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
                     <a href="#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Services</a>
                     <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
@@ -80,6 +85,11 @@
                         </svg>
                     </button>
                 </div>
+            </div>
+            
+            <!-- Mobile company name -->
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
             </div>
             
             <!-- Mobile menu -->
@@ -343,6 +353,7 @@
                     <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
                     <div class="flex flex-col gap-2">
                         <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights (SB 446)</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">Equal Employment Opportunity</a>
                         <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Center</a>
                         <a href="privacy.html#ai-transparency" class="text-gray-400 hover:text-orchid transition-colors">AI Transparency</a>
                         <a href="privacy.html#data-freedom" class="text-gray-400 hover:text-orchid transition-colors">Data Freedom</a>
@@ -377,7 +388,6 @@
     </footer>
 
     <script>
-        // Dark mode toggle functionality for both desktop and mobile
         function toggleDarkMode() {
             const html = document.documentElement;
             html.classList.toggle('dark');
