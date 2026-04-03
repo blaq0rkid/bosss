@@ -12,29 +12,7 @@ const blogArticles = [
     category: "Leadership",    
     slug: "skills-based-talent-acquisition-2026"    
   },
-  {    
-    id: "rtx-future-logistics-resilient",    
-    title: "RTX: Why the Future of Logistics isn't Just Automated—It's Resilient",    
-    excerpt: "Automation is a tool; resilience is the goal. Introducing the Resilient Talent Xchange (RTX) for the Logistics & Supply Chain sectors.",    
-    image: "https://cdn.marblism.com/JdXCV96HZYB.webp",     
-    imageAlt: "A high-tech logistics hub showcasing the RTX Resilient Talent Xchange model in action.",    
-    date: "2026-03-30",    
-    readTime: "7 min",    
-    category: "Trends",    
-    slug: "rtx-future-logistics-resilient"    
-  },
-    {  
-  id: "skills-based-talent-acquisition-2026",  
-  title: "Why Skills-Based Talent Acquisition Strategies Will Change the Way You Build Your Team",  
-  excerpt: "The resume is dead. Long live the Grit Scorecard. Discover why skills-based hiring is the only way to build a high-performance workforce in 2026.",  
-  image: "https://cdn.marblism.com/TAGN1J77STm.webp",   
-  imageAlt: "A high-contrast, professional image of a diverse team collaborating in a sleek, minimalist 2026 office environment.",  
-  date: "2026-03-31",  
-  readTime: "6 min",  
-  category: "Leadership",  
-  slug: "skills-based-talent-acquisition-2026"  
-},
-    {  
+    { 
   id: "bcf53a6a-364b-49da-b33d-4d358cdcb968",  
   title: "7 Deadly AI Recruiting Mistakes | BOSSS",  
   excerpt: "Discover why over-reliance on AI is costing you top talent and how BOSSS provides elite, human-centric hiring solutions in 2026.",  
