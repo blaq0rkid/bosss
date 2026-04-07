@@ -1,6 +1,28 @@
 
 // Blog Articles Data
 const blogArticles = [
+    {
+"id": "innovative-hiring-solutions-zero-emission-logistics",
+"title": "Innovative Hiring Solutions",
+"excerpt": "BOSSS delivers workforce architecture and RTX recruitment solutions for Port of Stockton employers navigating zero-emission logistics change.",
+"image": "https://cdn.marblism.com/OrSDe3slnHe.webp",
+"imageAlt": "Innovative Hiring Solutions for Zero-Emission Logistics",
+"date": "Tuesday, April 7, 2026",
+"readTime": "12 min",
+"category": "Recruitment",
+"slug": "innovative-hiring-solutions-zero-emission-logistics"
+},
+    {
+id: "green-port-talent-stockton-110m-revolution",
+title: "The Definitive Guide to Green Port Talent",
+excerpt: "A practical guide to Green Port Talent and the Port of Stockton’s $110.5M zero-emission transition for logistics leaders.",
+image: "https://cdn.marblism.com/l6kCBoCnJux.webp",
+imageAlt: "Zero-emission port operations at Port of Stockton",
+date: "Monday, April 6, 2026",
+readTime: "8 min read",
+category: "Workforce",
+slug: "green-port-talent-stockton-zero-emission-revolution"
+},
     {    
     id: "rtx-future-logistics-resilient",    
     title: "RTX: Why the Future of Logistics isn't Just Automated—It's Resilient",    
@@ -55,7 +77,29 @@ const blogArticles = [
     readTime: "8 min",  
     category: "Strategy",  
     slug: "agility-over-stability-temp-to-hire-2026"  
-  }  
+  },
+    {
+id: "04c64a7f-aa1a-4339-a933-00108259e6ac",
+title: "Temp-to-Hire vs Direct Hire",
+excerpt: "Compare temp-to-hire and direct hire for zero-emission logistics with a clinical ROI lens on staffing, retention, and workforce architecture.",
+image: "https://cdn.marblism.com/gcPGR0OY72R.webp",
+imageAlt: "Leadership team evaluating staffing models",
+date: "2026-04-07",
+readTime: "8 min read",
+category: "Recruitment",
+slug: "temp-to-hire-vs-direct-hire-green-port"
+},
+    {
+"id": "5-steps-safely-transition-electric-equipment-guide",
+"title": "5 Steps to a Safe Transition",
+"excerpt": "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",
+"image": "https://cdn.marblism.com/j1vkh7CoTEn.webp",
+"imageAlt": "Electric warehouse equipment and specialized workforce management",
+"date": "Sunday, April 5, 2026",
+"readTime": "8 min",
+"category": "Workforce",
+"slug": "5-steps-safely-transition-electric-equipment-guide"
+}
     // Add more articles here following the same format
 ];
 
