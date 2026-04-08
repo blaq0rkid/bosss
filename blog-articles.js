@@ -99,6 +99,17 @@ slug: "temp-to-hire-vs-direct-hire-green-port"
 "readTime": "8 min",
 "category": "Workforce",
 "slug": "5-steps-safely-transition-electric-equipment-guide"
+},
+    {
+"id": "validate-skills-logistics-stockton",
+"title": "5 Steps to Validate Logistics Skills & Reliability",
+"excerpt": "Learn how to validate skills and reliability in high-pressure logistics hubs like the Port of Stockton with our 5-step guide.",
+"image": "https://cdn.marblism.com/ThI9Hjlzmt5.webp",
+"imageAlt": "Professional Recruitment Solutions for High-Pressure Logistics",
+"date": "2026-04-08",
+"readTime": "6 min",
+"category": "Recruitment",
+"slug": "professional-recruitment-solutions-logistics-validation"
 }
     // Add more articles here following the same format
 ];
