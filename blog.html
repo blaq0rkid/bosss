@@ -34,17 +34,14 @@
     <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between gap-8">
-                <!-- Logo -->
                 <a href="index.html" class="flex-shrink-0">
                     <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
                 </a>
                 
-                <!-- Centered Company Name -->
                 <div class="hidden lg:block flex-1 text-center">
                     <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
                 </div>
                 
-                <!-- Desktop Navigation -->
                 <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
                     <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
                     <a href="index.html#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Services</a>
@@ -62,7 +59,6 @@
                     </button>
                 </div>
                 
-                <!-- Mobile menu button and dark mode toggle -->
                 <div class="lg:hidden flex items-center gap-4">
                     <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
                         <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,12 +76,10 @@
                 </div>
             </div>
             
-            <!-- Mobile company name -->
             <div class="lg:hidden text-center mt-2">
                 <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
             </div>
             
-            <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
                 <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
                 <a href="index.html#services" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Services</a>
@@ -102,6 +96,20 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl font-bold mb-4">The BOSSS Journal</h1>
                     <p class="text-xl">Industry masterclasses and workforce blueprints from BOSSS thought leaders</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 bg-gray-50 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-wrap gap-4 items-center justify-center">
+                        <button onclick="filterArticles('all')" class="filter-btn bg-orchid text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-700 transition-colors">All Articles</button>
+                        <button onclick="filterArticles('Industry Insights')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Industry Insights</button>
+                        <button onclick="filterArticles('RTX Strategy')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">RTX Strategy</button>
+                        <button onclick="filterArticles('Career Development')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Career Development</button>
+                        <button onclick="filterArticles('Worker Rights')" class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-2 rounded-lg font-bold hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">Worker Rights</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -207,6 +215,21 @@
         
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+
+        // Filter functionality
+        function filterArticles(category) {
+            // This will be handled by blog-articles.js
+            window.currentFilter = category;
+            loadArticles();
+            
+            // Update button styles
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-orchid', 'text-white');
+                btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-900', 'dark:text-white');
+            });
+            event.target.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-900', 'dark:text-white');
+            event.target.classList.add('bg-orchid', 'text-white');
         }
     </script>
     <script src="blog-articles.js"></script>
