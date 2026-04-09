@@ -1,192 +1,101 @@
 
 // BOSSS Journal Articles Data
 const articles = [
-    {
-        id: 1,
-        title: "The Future of Logistics: How AI and Human Grit Coexist",
-        excerpt: "Exploring the symbiotic relationship between artificial intelligence and high-grit professionals in modern supply chain management.",
-        author: "Kelley Crowell",
-        date: "March 15, 2026",
-        category: "Industry Insights",
-        readTime: "8 min read"
-    },
-    {
-        id: 2,
-        title: "RTX Methodology: Beyond Traditional Staffing",
-        excerpt: "A deep dive into the Resilient Talent Xchange framework and why it's revolutionizing workforce architecture in automated environments.",
-        author: "BOSSS Strategy Team",
-        date: "March 10, 2026",
-        category: "RTX Strategy",
-        readTime: "12 min read"
-    },
-    {
-        id: 3,
-        title: "Green Port Certification: What It Means for Workers",
-        excerpt: "Understanding the skills and certifications needed for zero-emission logistics careers at the Port of Stockton and beyond.",
-        author: "Kelley Crowell",
-        date: "March 5, 2026",
-        category: "Career Development",
-        readTime: "6 min read"
-    },
-    {
-        id: 4,
-        title: "Measuring Grit: The Science Behind Our Assessment",
-        excerpt: "How BOSSS developed a proprietary framework for evaluating resilience, adaptability, and tenacity in logistics professionals.",
-        author: "Dr. Sarah Martinez",
-        date: "February 28, 2026",
-        category: "RTX Strategy",
-        readTime: "10 min read"
-    },
-    {
-        id: 5,
-        title: "California SB 446: What Staffing Agencies Won't Tell You",
-        excerpt: "A transparent breakdown of temporary worker rights under California's new legislation and how BOSSS exceeds compliance standards.",
-        author: "Compliance Team",
-        date: "February 20, 2026",
-        category: "Worker Rights",
-        readTime: "7 min read"
-    },
-    {
-        id: 6,
-        title: "The Automation Paradox: Why Humans Are More Valuable Than Ever",
-        excerpt: "As warehouses automate, the demand for adaptable, problem-solving humans skyrockets. Here's why.",
-        author: "Kelley Crowell",
-        date: "February 15, 2026",
-        category: "Industry Insights",
-        readTime: "9 min read"
-    },
-    {
-        id: 7,
-        title: "From Temp Worker to Workforce Architect: Career Pathways",
-        excerpt: "Real stories of professionals who transformed their logistics careers through RTX placements and strategic skill development.",
-        author: "BOSSS Success Stories",
-        date: "February 10, 2026",
-        category: "Career Development",
-        readTime: "11 min read"
-    },
-    {
-        id: 8,
-        title: "AI Transparency in Hiring: Our Commitment to Fairness",
-        excerpt: "How BOSSS uses AI-assisted screening while maintaining human oversight and bias mitigation protocols.",
-        author: "Technology Ethics Team",
-        date: "February 5, 2026",
-        category: "AI & Technology",
-        readTime: "8 min read"
-    },
-    {
-        id: 9,
-        title: "Q4 Surge Survival Guide for Supply Chain Professionals",
-        excerpt: "Expert strategies for maintaining performance during peak logistics seasons when automation alone isn't enough.",
-        author: "Operations Team",
-        date: "January 30, 2026",
-        category: "Industry Insights",
-        readTime: "6 min read"
-    },
-    {
-        id: 10,
-        title: "The Port of Stockton Transformation: A Case Study",
-        excerpt: "How RTX methodology helped one of California's fastest-growing ports build a resilient, future-ready workforce.",
-        author: "Kelley Crowell",
-        date: "January 25, 2026",
-        category: "Case Studies",
-        readTime: "13 min read"
-    },
-    {
-        id: 11,
-        title: "Mental Resilience in High-Pressure Logistics Roles",
-        excerpt: "Understanding the psychological components of grit and how to develop composure under supply chain disruptions.",
-        author: "Dr. Sarah Martinez",
-        date: "January 20, 2026",
-        category: "Career Development",
-        readTime: "10 min read"
-    },
-    {
-        id: 12,
-        title: "Data Privacy Rights: What Every Worker Should Know",
-        excerpt: "A comprehensive guide to CCPA protections and how BOSSS empowers candidates to control their personal information.",
-        author: "Privacy Team",
-        date: "January 15, 2026",
-        category: "Worker Rights",
-        readTime: "7 min read"
-    },
-    {
-        id: 13,
-        title: "Warehouse Management Systems: The Human-AI Interface",
-        excerpt: "How modern WMS platforms are evolving to support human decision-making rather than replace it.",
-        author: "Technology Team",
-        date: "January 10, 2026",
-        category: "AI & Technology",
-        readTime: "9 min read"
-    },
-    {
-        id: 14,
-        title: "Equal Employment Opportunity: More Than Compliance",
-        excerpt: "Why BOSSS views EEO as a competitive advantage, not just a legal requirement, in building diverse talent pools.",
-        author: "HR Leadership",
-        date: "January 5, 2026",
-        category: "Workplace Culture",
-        readTime: "8 min read"
-    },
-    {
-        id: 15,
-        title: "The Sim-to-Ship™ Protocol: Virtual Training for Real Impact",
-        excerpt: "Inside BOSSS's proprietary training methodology that prepares RTX talent for Port of Stockton operations.",
-        author: "Training & Development",
-        date: "December 28, 2025",
-        category: "RTX Strategy",
-        readTime: "11 min read"
-    },
-    {
-        id: 16,
-        title: "Breaking the Transactional Staffing Model",
-        excerpt: "Why BOSSS refuses to treat workers as commodities and what workforce architecture really means.",
-        author: "Kelley Crowell",
-        date: "December 20, 2025",
-        category: "Industry Insights",
-        readTime: "10 min read"
-    },
-    {
-        id: 17,
-        title: "Career Pivots in Your 40s and 50s: It's Not Too Late",
-        excerpt: "How experienced professionals are finding new opportunities in automated logistics through RTX placements.",
-        author: "Career Counseling Team",
-        date: "December 15, 2025",
-        category: "Career Development",
-        readTime: "9 min read"
-    },
-    {
-        id: 18,
-        title: "Zero-Emission Logistics: Skills for the Green Economy",
-        excerpt: "What certifications and competencies will define logistics careers as ports transition to sustainable operations.",
-        author: "Sustainability Team",
-        date: "December 10, 2025",
-        category: "Industry Insights",
-        readTime: "12 min read"
-    },
-    {
-        id: 19,
-        title: "Reasonable Accommodations: A Guide for Workers with Disabilities",
-        excerpt: "Understanding your rights and how BOSSS supports full inclusion in logistics placements.",
-        author: "Accessibility Team",
-        date: "December 5, 2025",
-        category: "Worker Rights",
-        readTime: "8 min read"
-    },
-    {
-        id: 20,
-        title: "The Economics of High-Grit Talent: Why RTX Saves Money",
-        excerpt: "Data-driven analysis showing how resilient workers reduce turnover costs and improve operational efficiency.",
-        author: "Research Team",
-        date: "November 30, 2025",
-        category: "Case Studies",
-        readTime: "14 min read"
-    }
+    {  
+    "id": "19f23297-fd5b-4401-b2f9-5a9d4cea3d70",  
+    "title": "The Definitive Guide to Green Port Talent",  
+    "excerpt": "A practical guide to Green Port Talent and the Port of Stockton’s $110.5M zero-emission transition for logistics leaders.",  
+    "image": "https://cdn.marblism.com/l6kCBoCnJux.webp",  
+    "imageAlt": "Zero-emission port operations at Port of Stockton",  
+    "date": "April 6, 2026",  
+    "readTime": "8 min",  
+    "category": "Workforce",  
+    "slug": "the-definitive-guide-to-green-port-talent"  
+  },  
+  {  
+    "id": "7fff9a82-3ea5-4aaa-bc33-c65d6e354fa2",  
+    "title": "RTX: The Future is Resilient",  
+    "excerpt": "See why logistics growth from 2026-2046 depends on resilient talent, the Grit Scorecard, and automation backed by human judgment.",  
+    "image": "https://cdn.marblism.com/JdXCV96HZYB.webp",  
+    "imageAlt": "Futuristic Port of Stockton warehouse with human talent and advanced automation",  
+    "date": "March 30, 2026",  
+    "readTime": "7 min",  
+    "category": "Trends",  
+    "slug": "rtx-future-logistics-resilient"  
+  },  
+  {  
+    "id": "47b071ef-554d-49af-8403-44f84723c3ac",  
+    "title": "Innovative Hiring Solutions",  
+    "excerpt": "BOSSS delivers workforce architecture and RTX recruitment solutions for Port of Stockton employers navigating zero-emission logistics change.",  
+    "image": "https://cdn.marblism.com/OrSDe3slnHe.webp",  
+    "imageAlt": "Innovative Hiring Solutions for Zero-Emission Logistics",  
+    "date": "April 7, 2026",  
+    "readTime": "12 min",  
+    "category": "Recruitment",  
+    "slug": "innovative-hiring-solutions-zero-emission-logistics"  
+  },  
+  {  
+    "id": "04c64a7f-aa1a-4339-a933-00108259e6ac",  
+    "title": "Temp-to-Hire vs Direct Hire",  
+    "excerpt": "Compare temp-to-hire and direct hire for zero-emission logistics with a clinical ROI lens on staffing, retention, and workforce architecture.",  
+    "image": "https://cdn.marblism.com/gcPGR0OY72R.webp",  
+    "imageAlt": "Leadership team evaluating staffing models",  
+    "date": "April 7, 2026",  
+    "readTime": "8 min",  
+    "category": "Recruitment",  
+    "slug": "temp-to-hire-vs-direct-hire-green-port"  
+  },  
+  {  
+    "id": "1d7c7e55-a8b9-4005-9d1a-99b76899688b",  
+    "title": "5 Steps to a Safe Transition",  
+    "excerpt": "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",  
+    "image": "https://cdn.marblism.com/j1vkh7CoTEn.webp",  
+    "imageAlt": "Electric warehouse equipment and specialized workforce management",  
+    "date": "April 5, 2026",  
+    "readTime": "8 min",  
+    "category": "Workforce",  
+    "slug": "5-steps-safely-transition-electric-equipment-guide"  
+  },  
+  {  
+    "id": "7589935d-68e0-4070-9b3d-9d08c863eede",  
+    "title": "5 Steps to Validate Logistics Skills & Reliability",  
+    "excerpt": "Learn how to validate skills and reliability in high-pressure logistics hubs like the Port of Stockton with our 5-step guide.",  
+    "image": "https://cdn.marblism.com/ThI9Hjlzmt5.webp",  
+    "imageAlt": "Professional Recruitment Solutions for High-Pressure Logistics",  
+    "date": "April 8, 2026",  
+    "readTime": "6 min",  
+    "category": "Recruitment",  
+    "slug": "professional-recruitment-solutions-logistics-validation"  
+  },  
+  {  
+    "id": "75f26489-c97f-4528-a41d-aa798710f69f",  
+    "title": "Temp-to-Hire vs Direct Hire: The Truth for Growth Hubs",  
+    "excerpt": "Discover why temp-to-hire staffing offers superior risk mitigation and ROI for high-growth logistics hubs compared to direct hire.",  
+    "image": "https://cdn.marblism.com/sZBwsniLB5h.webp",  
+    "imageAlt": "A high-growth logistics hub reflecting workforce management solutions",  
+    "date": "April 7, 2026",  
+    "readTime": "6 min",  
+    "category": "Recruitment",  
+    "slug": "do-you-really-need-direct-hire-temp-to-hire-vs-direct-hire"  
+  },  
+  {  
+    "id": "e53b70cf-3e5b-4293-8031-f968d191065a",  
+    "title": "Grit Matters: Resilience in Talent Acquisition",  
+    "excerpt": "Discover why 'Grit' is the essential metric for the Port of Stockton’s zero-emission transition and how the BOSSS Grit Scorecard identifies elite talent.",  
+    "image": "https://cdn.marblism.com/V2ljPcL-6Di.webp",  
+    "imageAlt": "Industrial professional looking out over a shipping terminal, representing vision and resilience.",  
+    "date": "April 9, 2026",  
+    "readTime": "7 min",  
+    "category": "Strategy",  
+    "slug": "grit-matters-resilience-talent-acquisition"  
+  }
 ];
 
-// Function to create article HTML
+// Function to create article HTML with thumbnail
 function createArticleHTML(article) {
     return `
         <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-t-4 border-orchid">
+            <img src="${article.thumbnail}" alt="${article.title}" class="w-full h-48 object-cover">
             <div class="p-6">
                 <div class="flex items-center gap-2 text-sm text-orchid mb-3">
                     <span class="font-semibold">${article.category}</span>
@@ -221,7 +130,16 @@ function loadArticles(limit = null) {
     const container = document.getElementById('blog-articles');
     if (!container) return;
 
-    const articlesToShow = limit ? articles.slice(0, limit) : articles;
+    // Check if there's a filter active
+    const currentFilter = window.currentFilter || 'all';
+    
+    // Filter articles if needed
+    let filteredArticles = articles;
+    if (currentFilter !== 'all') {
+        filteredArticles = articles.filter(article => article.category === currentFilter);
+    }
+
+    const articlesToShow = limit ? filteredArticles.slice(0, limit) : filteredArticles;
     container.innerHTML = articlesToShow.map(article => createArticleHTML(article)).join('');
 }
 
