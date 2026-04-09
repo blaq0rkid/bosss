@@ -110,7 +110,18 @@ slug: "temp-to-hire-vs-direct-hire-green-port"
 "readTime": "6 min",
 "category": "Recruitment",
 "slug": "professional-recruitment-solutions-logistics-validation"
-}
+},
+    {
+"id": "7fff9a82-3ea5-4aaa-bc33-c65d6e354fa3",
+"title": "Grit Matters: Resilience in Talent Acquisition",
+"excerpt": "Discover why 'Grit' is the essential metric for the Port of Stockton’s zero-emission transition and how the BOSSS Grit Scorecard identifies elite talent.",
+"image": "https://cdn.marblism.com/uAl9Pxru01r.webp",
+"imageAlt": "Industrial professional looking out over a shipping terminal, representing vision and resilience.",
+"date": "April 9, 2026",
+"readTime": "7 min",
+"category": "Strategy",
+"slug": "grit-matters-resilience-talent-acquisition"
+    }
     // Add more articles here following the same format
 ];
 
