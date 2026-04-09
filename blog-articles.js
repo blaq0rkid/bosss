@@ -1,173 +1,238 @@
 
-// Blog Articles Data
-const blogArticles = [
+// BOSSS Journal Articles Data
+const articles = [
     {
-"id": "innovative-hiring-solutions-zero-emission-logistics",
-"title": "Innovative Hiring Solutions",
-"excerpt": "BOSSS delivers workforce architecture and RTX recruitment solutions for Port of Stockton employers navigating zero-emission logistics change.",
-"image": "https://cdn.marblism.com/OrSDe3slnHe.webp",
-"imageAlt": "Innovative Hiring Solutions for Zero-Emission Logistics",
-"date": "Tuesday, April 7, 2026",
-"readTime": "12 min",
-"category": "Recruitment",
-"slug": "innovative-hiring-solutions-zero-emission-logistics"
-},
+        id: 1,
+        title: "The Future of Logistics: How AI and Human Grit Coexist",
+        excerpt: "Exploring the symbiotic relationship between artificial intelligence and high-grit professionals in modern supply chain management.",
+        author: "Kelley Crowell",
+        date: "March 15, 2026",
+        category: "Industry Insights",
+        readTime: "8 min read"
+    },
     {
-id: "green-port-talent-stockton-110m-revolution",
-title: "The Definitive Guide to Green Port Talent",
-excerpt: "A practical guide to Green Port Talent and the Port of Stockton’s $110.5M zero-emission transition for logistics leaders.",
-image: "https://cdn.marblism.com/l6kCBoCnJux.webp",
-imageAlt: "Zero-emission port operations at Port of Stockton",
-date: "Monday, April 6, 2026",
-readTime: "8 min read",
-category: "Workforce",
-slug: "green-port-talent-stockton-zero-emission-revolution"
-},
-    {    
-    id: "rtx-future-logistics-resilient",    
-    title: "RTX: Why the Future of Logistics isn't Just Automated—It's Resilient",    
-    excerpt: "Automation is a tool; resilience is the goal. Introducing the Resilient Talent Xchange (RTX) for the Logistics & Supply Chain sectors.",    
-    image: "https://cdn.marblism.com/JdXCV96HZYB.webp",     
-    imageAlt: "A high-tech logistics hub showcasing the RTX Resilient Talent Xchange model in action.",    
-    date: "2026-03-30",    
-    readTime: "7 min",    
-    category: "Trends",    
-    slug: "rtx-future-logistics-resilient"    
-  },
-    {    
-    id: "skills-based-talent-acquisition-2026",    
-    title: "Why Skills-Based Talent Acquisition Strategies Will Change the Way You Build Your Team",    
-    excerpt: "The resume is dead. Long live the Grit Scorecard. Discover why skills-based hiring is the only way to build a high-performance workforce in 2026.",    
-    image: "https://cdn.marblism.com/euy_Ya8VF_G.webp",     
-    imageAlt: "A high-contrast, professional image of a diverse team collaborating in a sleek, minimalist 2026 office environment.",    
-    date: "2026-03-31",    
-    readTime: "6 min",    
-    category: "Leadership",    
-    slug: "skills-based-talent-acquisition-2026"    
-  },
-    { 
-  id: "bcf53a6a-364b-49da-b33d-4d358cdcb968",  
-  title: "7 Deadly AI Recruiting Mistakes | BOSSS",  
-  excerpt: "Discover why over-reliance on AI is costing you top talent and how BOSSS provides elite, human-centric hiring solutions in 2026.",  
-  image: "https://cdn.marblism.com/1nTW3bE1YKd.webp",  
-  imageAlt: "The 7 Deadly AI Recruiting Mistakes Hero",  
-  date: "March 29, 2026",  
-  readTime: "8 min",  
-  category: "Technology",  
-  slug: "7-deadly-ai-mistakes"  
-},  
-    {  
-    id: "6735f99b-38d8-4396-9213-194b32258e53",  
-    title: "Human-Centric Recruitment in an AI-Driven 2026",  
-    excerpt: "Explore how BOSSS balances high-tech efficiency with human intuition for elite staffing in the year 2026.",  
-    image: "https://cdn.marblism.com/TAGN1J77STm.webp",  
-    imageAlt: "Successful professional placement in a modern office",  
-    date: "March 29, 2026",  
-    readTime: "6 min",  
-    category: "Insight",  
-    slug: "human-centric-recruitment-ai-2026"  
-  },  
-  {  
-    id: "718f9d85-fe41-4527-98cc-290369bdc3b1",  
-    title: "Agility Over Stability: The Temp-to-Hire Secret",  
-    excerpt: "Discover why the temp-to-hire model is the strategic choice for businesses looking to minimize risk in 2026.",  
-    image: "https://cdn.marblism.com/XZv9YOfsJ3P.webp",  
-    imageAlt: "Modern workforce agility and strategy",  
-    date: "March 29, 2026",  
-    readTime: "8 min",  
-    category: "Strategy",  
-    slug: "agility-over-stability-temp-to-hire-2026"  
-  },
+        id: 2,
+        title: "RTX Methodology: Beyond Traditional Staffing",
+        excerpt: "A deep dive into the Resilient Talent Xchange framework and why it's revolutionizing workforce architecture in automated environments.",
+        author: "BOSSS Strategy Team",
+        date: "March 10, 2026",
+        category: "RTX Strategy",
+        readTime: "12 min read"
+    },
     {
-id: "04c64a7f-aa1a-4339-a933-00108259e6ac",
-title: "Temp-to-Hire vs Direct Hire",
-excerpt: "Compare temp-to-hire and direct hire for zero-emission logistics with a clinical ROI lens on staffing, retention, and workforce architecture.",
-image: "https://cdn.marblism.com/gcPGR0OY72R.webp",
-imageAlt: "Leadership team evaluating staffing models",
-date: "2026-04-07",
-readTime: "8 min read",
-category: "Recruitment",
-slug: "temp-to-hire-vs-direct-hire-green-port"
-},
+        id: 3,
+        title: "Green Port Certification: What It Means for Workers",
+        excerpt: "Understanding the skills and certifications needed for zero-emission logistics careers at the Port of Stockton and beyond.",
+        author: "Kelley Crowell",
+        date: "March 5, 2026",
+        category: "Career Development",
+        readTime: "6 min read"
+    },
     {
-"id": "5-steps-safely-transition-electric-equipment-guide",
-"title": "5 Steps to a Safe Transition",
-"excerpt": "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",
-"image": "https://cdn.marblism.com/j1vkh7CoTEn.webp",
-"imageAlt": "Electric warehouse equipment and specialized workforce management",
-"date": "Sunday, April 5, 2026",
-"readTime": "8 min",
-"category": "Workforce",
-"slug": "5-steps-safely-transition-electric-equipment-guide"
-},
+        id: 4,
+        title: "Measuring Grit: The Science Behind Our Assessment",
+        excerpt: "How BOSSS developed a proprietary framework for evaluating resilience, adaptability, and tenacity in logistics professionals.",
+        author: "Dr. Sarah Martinez",
+        date: "February 28, 2026",
+        category: "RTX Strategy",
+        readTime: "10 min read"
+    },
     {
-"id": "validate-skills-logistics-stockton",
-"title": "5 Steps to Validate Logistics Skills & Reliability",
-"excerpt": "Learn how to validate skills and reliability in high-pressure logistics hubs like the Port of Stockton with our 5-step guide.",
-"image": "https://cdn.marblism.com/ThI9Hjlzmt5.webp",
-"imageAlt": "Professional Recruitment Solutions for High-Pressure Logistics",
-"date": "2026-04-08",
-"readTime": "6 min",
-"category": "Recruitment",
-"slug": "professional-recruitment-solutions-logistics-validation"
-},
+        id: 5,
+        title: "California SB 446: What Staffing Agencies Won't Tell You",
+        excerpt: "A transparent breakdown of temporary worker rights under California's new legislation and how BOSSS exceeds compliance standards.",
+        author: "Compliance Team",
+        date: "February 20, 2026",
+        category: "Worker Rights",
+        readTime: "7 min read"
+    },
     {
-"id": "7fff9a82-3ea5-4aaa-bc33-c65d6e354fa3",
-"title": "Grit Matters: Resilience in Talent Acquisition",
-"excerpt": "Discover why 'Grit' is the essential metric for the Port of Stockton’s zero-emission transition and how the BOSSS Grit Scorecard identifies elite talent.",
-"image": "https://cdn.marblism.com/uAl9Pxru01r.webp",
-"imageAlt": "Industrial professional looking out over a shipping terminal, representing vision and resilience.",
-"date": "April 9, 2026",
-"readTime": "7 min",
-"category": "Strategy",
-"slug": "grit-matters-resilience-talent-acquisition"
+        id: 6,
+        title: "The Automation Paradox: Why Humans Are More Valuable Than Ever",
+        excerpt: "As warehouses automate, the demand for adaptable, problem-solving humans skyrockets. Here's why.",
+        author: "Kelley Crowell",
+        date: "February 15, 2026",
+        category: "Industry Insights",
+        readTime: "9 min read"
+    },
+    {
+        id: 7,
+        title: "From Temp Worker to Workforce Architect: Career Pathways",
+        excerpt: "Real stories of professionals who transformed their logistics careers through RTX placements and strategic skill development.",
+        author: "BOSSS Success Stories",
+        date: "February 10, 2026",
+        category: "Career Development",
+        readTime: "11 min read"
+    },
+    {
+        id: 8,
+        title: "AI Transparency in Hiring: Our Commitment to Fairness",
+        excerpt: "How BOSSS uses AI-assisted screening while maintaining human oversight and bias mitigation protocols.",
+        author: "Technology Ethics Team",
+        date: "February 5, 2026",
+        category: "AI & Technology",
+        readTime: "8 min read"
+    },
+    {
+        id: 9,
+        title: "Q4 Surge Survival Guide for Supply Chain Professionals",
+        excerpt: "Expert strategies for maintaining performance during peak logistics seasons when automation alone isn't enough.",
+        author: "Operations Team",
+        date: "January 30, 2026",
+        category: "Industry Insights",
+        readTime: "6 min read"
+    },
+    {
+        id: 10,
+        title: "The Port of Stockton Transformation: A Case Study",
+        excerpt: "How RTX methodology helped one of California's fastest-growing ports build a resilient, future-ready workforce.",
+        author: "Kelley Crowell",
+        date: "January 25, 2026",
+        category: "Case Studies",
+        readTime: "13 min read"
+    },
+    {
+        id: 11,
+        title: "Mental Resilience in High-Pressure Logistics Roles",
+        excerpt: "Understanding the psychological components of grit and how to develop composure under supply chain disruptions.",
+        author: "Dr. Sarah Martinez",
+        date: "January 20, 2026",
+        category: "Career Development",
+        readTime: "10 min read"
+    },
+    {
+        id: 12,
+        title: "Data Privacy Rights: What Every Worker Should Know",
+        excerpt: "A comprehensive guide to CCPA protections and how BOSSS empowers candidates to control their personal information.",
+        author: "Privacy Team",
+        date: "January 15, 2026",
+        category: "Worker Rights",
+        readTime: "7 min read"
+    },
+    {
+        id: 13,
+        title: "Warehouse Management Systems: The Human-AI Interface",
+        excerpt: "How modern WMS platforms are evolving to support human decision-making rather than replace it.",
+        author: "Technology Team",
+        date: "January 10, 2026",
+        category: "AI & Technology",
+        readTime: "9 min read"
+    },
+    {
+        id: 14,
+        title: "Equal Employment Opportunity: More Than Compliance",
+        excerpt: "Why BOSSS views EEO as a competitive advantage, not just a legal requirement, in building diverse talent pools.",
+        author: "HR Leadership",
+        date: "January 5, 2026",
+        category: "Workplace Culture",
+        readTime: "8 min read"
+    },
+    {
+        id: 15,
+        title: "The Sim-to-Ship™ Protocol: Virtual Training for Real Impact",
+        excerpt: "Inside BOSSS's proprietary training methodology that prepares RTX talent for Port of Stockton operations.",
+        author: "Training & Development",
+        date: "December 28, 2025",
+        category: "RTX Strategy",
+        readTime: "11 min read"
+    },
+    {
+        id: 16,
+        title: "Breaking the Transactional Staffing Model",
+        excerpt: "Why BOSSS refuses to treat workers as commodities and what workforce architecture really means.",
+        author: "Kelley Crowell",
+        date: "December 20, 2025",
+        category: "Industry Insights",
+        readTime: "10 min read"
+    },
+    {
+        id: 17,
+        title: "Career Pivots in Your 40s and 50s: It's Not Too Late",
+        excerpt: "How experienced professionals are finding new opportunities in automated logistics through RTX placements.",
+        author: "Career Counseling Team",
+        date: "December 15, 2025",
+        category: "Career Development",
+        readTime: "9 min read"
+    },
+    {
+        id: 18,
+        title: "Zero-Emission Logistics: Skills for the Green Economy",
+        excerpt: "What certifications and competencies will define logistics careers as ports transition to sustainable operations.",
+        author: "Sustainability Team",
+        date: "December 10, 2025",
+        category: "Industry Insights",
+        readTime: "12 min read"
+    },
+    {
+        id: 19,
+        title: "Reasonable Accommodations: A Guide for Workers with Disabilities",
+        excerpt: "Understanding your rights and how BOSSS supports full inclusion in logistics placements.",
+        author: "Accessibility Team",
+        date: "December 5, 2025",
+        category: "Worker Rights",
+        readTime: "8 min read"
+    },
+    {
+        id: 20,
+        title: "The Economics of High-Grit Talent: Why RTX Saves Money",
+        excerpt: "Data-driven analysis showing how resilient workers reduce turnover costs and improve operational efficiency.",
+        author: "Research Team",
+        date: "November 30, 2025",
+        category: "Case Studies",
+        readTime: "14 min read"
     }
-    // Add more articles here following the same format
 ];
 
-// Function to render article cards
-function renderArticleCards(articles, containerId, limit = null) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    const articlesToRender = limit ? articles.slice(0, limit) : articles;
-    
-    container.innerHTML = articlesToRender.map(article => `
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform duration-300 hover:-translate-y-2">
-            <div class="relative h-48 overflow-hidden">
-                <img src="${article.image}" alt="${article.imageAlt}" class="w-full h-full object-cover">
-                <div class="absolute top-4 left-4 bg-orchid text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                    ${article.category}
-                </div>
-            </div>
+// Function to create article HTML
+function createArticleHTML(article) {
+    return `
+        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-t-4 border-orchid">
             <div class="p-6">
-                <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
-                    <span>${article.date}</span>
+                <div class="flex items-center gap-2 text-sm text-orchid mb-3">
+                    <span class="font-semibold">${article.category}</span>
                     <span>•</span>
-                    <span>${article.readTime}</span>
+                    <span class="text-gray-600 dark:text-gray-400">${article.readTime}</span>
                 </div>
-                <h3 class="text-xl font-bold text-deep-black mb-3 leading-tight">${article.title}</h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3">
+                <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white hover:text-orchid transition-colors">
+                    ${article.title}
+                </h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
                     ${article.excerpt}
                 </p>
-                <a href="articles/${article.slug}.html" class="inline-flex items-center text-orchid font-semibold hover:gap-2 transition-all">
-                    Read Full Article  
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                </a>
+                <div class="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-semibold text-deep-black dark:text-white">${article.author}</span>
+                        <span class="text-sm text-gray-600 dark:text-gray-400">${article.date}</span>
+                    </div>
+                    <a href="#" class="text-orchid font-bold hover:underline flex items-center gap-2">
+                        Read More
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
-    `).join('');
+        </article>
+    `;
 }
 
-// Initialize on page load
-document.addEventListener('DOMContentLoaded', function() {
-    // For homepage - show latest 3 articles
-    if (document.getElementById('blog-articles')) {
-        renderArticleCards(blogArticles, 'blog-articles', 3);
-    }
-    
-    // For blog archive page - show all articles
-    if (document.getElementById('all-blog-articles')) {
-        renderArticleCards(blogArticles, 'all-blog-articles');
-    }
-});
+// Function to load articles on page
+function loadArticles(limit = null) {
+    const container = document.getElementById('blog-articles');
+    if (!container) return;
+
+    const articlesToShow = limit ? articles.slice(0, limit) : articles;
+    container.innerHTML = articlesToShow.map(article => createArticleHTML(article)).join('');
+}
+
+// Load articles when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check if we're on index.html (show only 3) or blog.html (show all)
+        const isIndexPage = document.querySelector('#home') !== null;
+        loadArticles(isIndexPage ? 3 : null);
+    });
+} else {
+    const isIndexPage = document.querySelector('#home') !== null;
+    loadArticles(isIndexPage ? 3 : null);
+}
