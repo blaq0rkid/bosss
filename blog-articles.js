@@ -2,26 +2,70 @@
 // BOSSS Journal Articles Data
 const articles = [
     {  
+    "id": "1d7c7e55-a8b9-4005-9d1a-99b76899688b",  
+    "title": "5 Steps to a Safe Transition",  
+    "excerpt": "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",  
+    "image": "https://cdn.marblism.com/j1vkh7CoTEn.webp",  
+    "imageAlt": "Electric warehouse equipment and specialized workforce management",  
+    "date": "April 5, 2026",  
+    "readTime": "8 min",  
+    "category": "Workforce",  
+    "slug": "5-steps-safely-transition-electric-equipment-guide"  
+  },  
+  {  
+    "id": "bcf53a6a-364b-49da-b33d-4d358cdcb968",  
+    "title": "The 7 Deadly AI Recruiting Mistakes",  
+    "excerpt": "Learn how BOSSS corrects 7 AI recruitment failures with Workforce Architecture, human grit, and High-Utility Workforce Stabilization.",  
+    "image": "https://cdn.marblism.com/1nTW3bE1YKd.webp",  
+    "imageAlt": "The Workforce Architect’s Guide hero image",  
+    "date": "March 29, 2026",  
+    "readTime": "8 min",  
+    "category": "Recruitment",  
+    "slug": "7-deadly-ai-mistakes"  
+  },  
+  {  
+    "id": "718f9d85-fe41-4527-98cc-290369bdc3b1",  
+    "title": "Agility Over Stability: Why Temp-to-Hire is the 2026 Workforce Secret Weapon",  
+    "excerpt": "Discover why the temp-to-hire model is the strategic choice for businesses looking to minimize risk and maximize growth in today's cooling labor market.",  
+    "image": "https://cdn.marblism.com/XZv9YOfsJ3P.webp",  
+    "imageAlt": "Agility Over Stability in 2026 Workforce",  
+    "date": "March 29, 2026",  
+    "readTime": "8 min",  
+    "category": "Strategy",  
+    "slug": "agility-over-stability-temp-to-hire-2026"  
+  },  
+  {  
     "id": "19f23297-fd5b-4401-b2f9-5a9d4cea3d70",  
-    "title": "The Definitive Guide to Green Port Talent",  
-    "excerpt": "A practical guide to Green Port Talent and the Port of Stockton’s $110.5M zero-emission transition for logistics leaders.",  
+    "title": "Green Port Talent: Stockton’s Zero-Emission Revolution",  
+    "excerpt": "Navigating the Port of Stockton’s $110.5M shift with specialized Green Port talent solutions.",  
     "image": "https://cdn.marblism.com/l6kCBoCnJux.webp",  
     "imageAlt": "Zero-emission port operations at Port of Stockton",  
     "date": "April 6, 2026",  
     "readTime": "8 min",  
     "category": "Workforce",  
-    "slug": "the-definitive-guide-to-green-port-talent"  
+    "slug": "green-port-talent-stockton-zero-emission-revolution"  
   },  
   {  
-    "id": "7fff9a82-3ea5-4aaa-bc33-c65d6e354fa2",  
-    "title": "RTX: The Future is Resilient",  
-    "excerpt": "See why logistics growth from 2026-2046 depends on resilient talent, the Grit Scorecard, and automation backed by human judgment.",  
-    "image": "https://cdn.marblism.com/JdXCV96HZYB.webp",  
-    "imageAlt": "Futuristic Port of Stockton warehouse with human talent and advanced automation",  
-    "date": "March 30, 2026",  
+    "id": "e53b70cf-3e5b-4293-8031-f968d191065a",  
+    "title": "Grit Matters: Resilience in Talent Acquisition",  
+    "excerpt": "Discover why 'Grit' is the essential metric for the Port of Stockton’s zero-emission transition and how the BOSSS Grit Scorecard identifies elite talent.",  
+    "image": "https://cdn.marblism.com/V2ljPcL-6Di.webp",  
+    "imageAlt": "Industrial professional looking out over a shipping terminal, representing vision and resilience.",  
+    "date": "April 9, 2026",  
     "readTime": "7 min",  
-    "category": "Trends",  
-    "slug": "rtx-future-logistics-resilient"  
+    "category": "Strategy",  
+    "slug": "grit-matters-resilience-talent-acquisition"  
+  },  
+  {  
+    "id": "6735f99b-38d8-4396-9213-194b32258e53",  
+    "title": "Human-Centric Recruitment in an AI-Driven 2026",  
+    "excerpt": "Explore how BOSSS balances AI efficiency with human intuition for elite staffing in 2026.",  
+    "image": "https://cdn.marblism.com/TAGN1J77STm.webp",  
+    "imageAlt": "Professional partnership and successful placement in 2026",  
+    "date": "March 29, 2026",  
+    "readTime": "6 min",  
+    "category": "Recruitment",  
+    "slug": "human-centric-recruitment-ai-2026"  
   },  
   {  
     "id": "47b071ef-554d-49af-8403-44f84723c3ac",  
@@ -35,28 +79,6 @@ const articles = [
     "slug": "innovative-hiring-solutions-zero-emission-logistics"  
   },  
   {  
-    "id": "04c64a7f-aa1a-4339-a933-00108259e6ac",  
-    "title": "Temp-to-Hire vs Direct Hire",  
-    "excerpt": "Compare temp-to-hire and direct hire for zero-emission logistics with a clinical ROI lens on staffing, retention, and workforce architecture.",  
-    "image": "https://cdn.marblism.com/gcPGR0OY72R.webp",  
-    "imageAlt": "Leadership team evaluating staffing models",  
-    "date": "April 7, 2026",  
-    "readTime": "8 min",  
-    "category": "Recruitment",  
-    "slug": "temp-to-hire-vs-direct-hire-green-port"  
-  },  
-  {  
-    "id": "1d7c7e55-a8b9-4005-9d1a-99b76899688b",  
-    "title": "5 Steps to a Safe Transition",  
-    "excerpt": "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",  
-    "image": "https://cdn.marblism.com/j1vkh7CoTEn.webp",  
-    "imageAlt": "Electric warehouse equipment and specialized workforce management",  
-    "date": "April 5, 2026",  
-    "readTime": "8 min",  
-    "category": "Workforce",  
-    "slug": "5-steps-safely-transition-electric-equipment-guide"  
-  },  
-  {  
     "id": "7589935d-68e0-4070-9b3d-9d08c863eede",  
     "title": "5 Steps to Validate Logistics Skills & Reliability",  
     "excerpt": "Learn how to validate skills and reliability in high-pressure logistics hubs like the Port of Stockton with our 5-step guide.",  
@@ -68,26 +90,48 @@ const articles = [
     "slug": "professional-recruitment-solutions-logistics-validation"  
   },  
   {  
-    "id": "75f26489-c97f-4528-a41d-aa798710f69f",  
-    "title": "Temp-to-Hire vs Direct Hire: The Truth for Growth Hubs",  
-    "excerpt": "Discover why temp-to-hire staffing offers superior risk mitigation and ROI for high-growth logistics hubs compared to direct hire.",  
-    "image": "https://cdn.marblism.com/sZBwsniLB5h.webp",  
-    "imageAlt": "A high-growth logistics hub reflecting workforce management solutions",  
-    "date": "April 7, 2026",  
-    "readTime": "6 min",  
-    "category": "Recruitment",  
-    "slug": "do-you-really-need-direct-hire-temp-to-hire-vs-direct-hire"  
+    "id": "7fff9a82-3ea5-4aaa-bc33-c65d6e354fa2",  
+    "title": "RTX: The Future is Resilient",  
+    "excerpt": "See why logistics growth from 2026-2046 depends on resilient talent, the Grit Scorecard, and automation backed by human judgment.",  
+    "image": "https://cdn.marblism.com/JdXCV96HZYB.webp",  
+    "imageAlt": "Futuristic Port of Stockton warehouse with human talent and advanced automation",  
+    "date": "March 30, 2026",  
+    "readTime": "7 min",  
+    "category": "Trends",  
+    "slug": "rtx-future-logistics-resilient"  
   },  
   {  
-    "id": "e53b70cf-3e5b-4293-8031-f968d191065a",  
-    "title": "Grit Matters: Resilience in Talent Acquisition",  
-    "excerpt": "Discover why 'Grit' is the essential metric for the Port of Stockton’s zero-emission transition and how the BOSSS Grit Scorecard identifies elite talent.",  
-    "image": "https://cdn.marblism.com/V2ljPcL-6Di.webp",  
-    "imageAlt": "Industrial professional looking out over a shipping terminal, representing vision and resilience.",  
-    "date": "April 9, 2026",  
-    "readTime": "7 min",  
-    "category": "Strategy",  
-    "slug": "grit-matters-resilience-talent-acquisition"  
+    "id": "0c701844-721d-4711-8846-6454aa22b888",  
+    "title": "Why Skills-Based Talent Acquisition Changes Teams",  
+    "excerpt": "Discover why the resume is dead in 2026 and how BOSSS uses the Grit Scorecard™ and RTX model to build resilient workforces.",  
+    "image": "https://cdn.marblism.com/euy_Ya8VF_G.webp",  
+    "imageAlt": "Digital representation of skills-based hiring and talent acquisition strategies for 2026.",  
+    "date": "March 31, 2026",  
+    "readTime": "8 min",  
+    "category": "Recruitment",  
+    "slug": "skills-based-talent-acquisition-2026"  
+  },  
+  {  
+    "id": "04c64a7f-aa1a-4339-a933-00108259e6ac",  
+    "title": "Temp-to-Hire vs Direct Hire",  
+    "excerpt": "Compare temp-to-hire and direct hire for zero-emission logistics with a clinical ROI lens on staffing, retention, and workforce architecture.",  
+    "image": "https://cdn.marblism.com/gcPGR0OY72R.webp",  
+    "imageAlt": "Leadership team evaluating staffing models",  
+    "date": "April 7, 2026",  
+    "readTime": "8 min",  
+    "category": "Recruitment",  
+    "slug": "temp-to-hire-vs-direct-hire-green-port"  
+  },  
+  {  
+    "id": "19f23297-fd5b-4401-b2f9-5a9d4cea3d70",  
+    "title": "The Definitive Guide to Green Port Talent",  
+    "excerpt": "A practical guide to Green Port Talent and the Port of Stockton’s $110.5M zero-emission transition for logistics leaders.",  
+    "image": "https://cdn.marblism.com/l6kCBoCnJux.webp",  
+    "imageAlt": "Zero-emission port operations at Port of Stockton",  
+    "date": "April 6, 2026",  
+    "readTime": "8 min",  
+    "category": "Workforce",  
+    "slug": "the-definitive-guide-to-green-port-talent"  
   }
 ];
 
