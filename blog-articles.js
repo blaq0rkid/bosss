@@ -2,6 +2,17 @@
 // BOSSS Journal Articles Data
 const articles = [
   {
+"id": "5-steps-manage-labor-tariff-uncertainty",
+"title": "5 Steps to Manage Labor Amidst Tariff Uncertainty",
+"excerpt": "Learn how to de-risk your logistics operations and leverage Green Port talent through specialized workforce management services.",
+"image": "https://cdn.marblism.com/i-km6jL7U9U.webp",
+"imageAlt": "Logistics hub and workforce management concept",
+"date": "2026-04-10",
+"readTime": "8 min",
+"category": "Workforce",
+"slug": "manage-labor-navigate-tariff-uncertainty"
+},
+  {
     id: "1d7c7e55-a8b9-4005-9d1a-99b76899688b",
     title: "5 Steps to a Safe Transition",
     excerpt: "A 5-step guide for warehouse managers moving to electric equipment with safer operations, stronger staffing, and practical employment solutions.",
