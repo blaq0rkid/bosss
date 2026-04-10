@@ -147,20 +147,24 @@ const articles = [
   }
 ];
 
-// Function to create article HTML with thumbnail
+// Function to create article HTML with thumbnail and proper linking
 function createArticleHTML(article) {
     return `
         <article class="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-t-4 border-orchid">
-            <img src="${article.image}" alt="${article.imageAlt}" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/400x250/9932CC/FFFFFF?text=BOSSS+Article'">
+            <a href="articles/${article.slug}.html">
+                <img src="${article.image}" alt="${article.imageAlt}" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/400x250/9932CC/FFFFFF?text=BOSSS+Article'">
+            </a>
             <div class="p-6">
                 <div class="flex items-center gap-2 text-sm text-orchid mb-3">
                     <span class="font-semibold">${article.category}</span>
                     <span>•</span>
                     <span class="text-gray-600 dark:text-gray-400">${article.readTime}</span>
                 </div>
-                <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white hover:text-orchid transition-colors">
-                    ${article.title}
-                </h3>
+                <a href="articles/${article.slug}.html">
+                    <h3 class="text-xl font-bold mb-3 text-deep-black dark:text-white hover:text-orchid transition-colors">
+                        ${article.title}
+                    </h3>
+                </a>
                 <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
                     ${article.excerpt}
                 </p>
@@ -169,7 +173,7 @@ function createArticleHTML(article) {
                         <span class="text-sm font-semibold text-deep-black dark:text-white">${article.author}</span>
                         <span class="text-sm text-gray-600 dark:text-gray-400">${article.date}</span>
                     </div>
-                    <a href="javascript:void(0);" onclick="alert('Full article coming soon!')" class="text-orchid font-bold hover:underline flex items-center gap-2">
+                    <a href="articles/${article.slug}.html" class="text-orchid font-bold hover:underline flex items-center gap-2">
                         Read More
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
