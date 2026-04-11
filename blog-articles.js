@@ -188,6 +188,17 @@ const articles = [
 "readTime": "8 min",
 "category": "Workforce",
 "slug": "are-unskilled-logistics-jobs-dead"
+},
+  {
+"id": "stop-calling-it-a-shortage-driver-crisis-leadership-failure",
+"title": "Stop Calling It a Shortage: The Driver Crisis",
+"excerpt": "The CDL shortage is a myth. Explore how leadership failures and commodity hiring models are the real culprits in the logistics industry.",
+"image": "https://cdn.marblism.com/ZkJSt_0gEzl.webp",
+"imageAlt": "Stop Calling It a Shortage: Why the 'Driver Crisis' is Actually a Leadership Failure",
+"date": "2026-04-11",
+"readTime": "8 min",
+"category": "Leadership",
+"slug": "stop-calling-it-a-shortage-driver-crisis-leadership-failure"
 }
 ];
 
