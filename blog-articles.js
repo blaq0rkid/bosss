@@ -177,6 +177,17 @@ const articles = [
 "readTime": "8 min",
 "category": "Workforce",
 "slug": "workforce-architecture-logistics-disruption"
+},
+  {
+"id": "are-unskilled-logistics-jobs-dead",
+"title": "Are 'Unskilled' Logistics Jobs Dead?",
+"excerpt": "Discover why automation in 2026 requires high-grit talent and how BOSSS provides specialized workforce management services.",
+"image": "https://cdn.marblism.com/_Tybs4VdN6O.webp",
+"imageAlt": "Are 'Unskilled' Logistics Jobs Dead? Why Automation Demands High-Grit Recruitment Services",
+"date": "2026-04-11",
+"readTime": "8 min",
+"category": "Workforce",
+"slug": "are-unskilled-logistics-jobs-dead"
 }
 ];
 
