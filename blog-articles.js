@@ -199,6 +199,17 @@ const articles = [
 "readTime": "8 min",
 "category": "Leadership",
 "slug": "stop-calling-it-a-shortage-driver-crisis-leadership-failure"
+},
+  {
+"id": "the-capex-trap-ev-workforce-architecture",
+"title": "The Capex Trap: EV Fleets and Workforce Architecture",
+"excerpt": "Why multi-million dollar investments in EV fleets fail without a specialized human infrastructure. Master your workforce architecture.",
+"image": "https://cdn.marblism.com/Dic-OGi8B5i.webp",
+"imageAlt": "Large electric trucks at a charging depot representing massive capital expenditure in green logistics.",
+"date": "April 11, 2026",
+"readTime": "9 min",
+"category": "Workforce",
+"slug": "the-capex-trap-ev-workforce-architecture"
 }
 ];
 
