@@ -166,6 +166,17 @@ const articles = [
 "readTime": "12 min",
 "category": "Workforce",
 "slug": "does-grit-matter-2026-logistics-grit"
+},
+  {
+"id": "workforce-architecture-logistics-disruption-2026",
+"title": "Why Workforce Architecture Solves Logistics Disruption",
+"excerpt": "Discover how Black Orchid's specialized workforce architecture prepares employers and CDL holders for the $110M Green Port transformation and AI integration.",
+"image": "https://cdn.marblism.com/Yt0BwYjrc99.webp",
+"imageAlt": "Hero image depicting modern logistics and workforce architecture",
+"date": "April 11, 2026",
+"readTime": "8 min",
+"category": "Workforce",
+"slug": "workforce-architecture-logistics-disruption"
 }
 ];
 
