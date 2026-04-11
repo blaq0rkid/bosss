@@ -155,7 +155,18 @@ const articles = [
     category: "Workforce",
     slug: "the-definitive-guide-to-green-port-talent",
     author: "Kelley Crowell"
-  }
+  },
+  {
+"id": "does-grit-matter-2026",
+"title": "Does Grit Matter in 2026? High-Pressure Logistics Tips",
+"excerpt": "Discover why cognitive grit remains the ultimate differentiator in 2026's high-tech, zero-emission logistics landscape.",
+"image": "https://cdn.marblism.com/77JlJlHzQIy.webp",
+"imageAlt": "A high-pressure logistics environment showing a mix of human expertise and advanced automation",
+"date": "April 11, 2026",
+"readTime": "12 min",
+"category": "Workforce",
+"slug": "does-grit-matter-2026-logistics-grit"
+}
 ];
 
 // Function to create article HTML with thumbnail and proper linking
