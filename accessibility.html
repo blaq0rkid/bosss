@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Statement for BOSSS - Our commitment to digital accessibility">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo (2).png">
+    <link rel="apple-touch-icon" href="logo (2).png">
+    
+    <title>Accessibility Statement | BOSSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'orchid': '#9932CC',
+                        'deep-black': '#000000',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'Montserrat', 'Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <header class="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-lg transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between gap-8">
+                <a href="index.html" class="flex-shrink-0">
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-24 w-auto dark:invert transition-all duration-300">
+                </a>
+                
+                <div class="hidden lg:block flex-1 text-center">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+                </div>
+                
+                <div class="hidden lg:flex items-center gap-6 flex-shrink-0">
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Home</a>
+                    <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">RTX Strategy</a>
+                    <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Journal</a>
+                    <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300 whitespace-nowrap">Contact</a>
+                    
+                    <button id="darkModeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors ml-4" aria-label="Toggle dark mode">
+                        <svg id="sunIcon" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIcon" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="darkModeToggleMobile" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle dark mode">
+                        <svg id="sunIconMobile" class="w-5 h-5 text-yellow-500 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg id="moonIconMobile" class="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-gray-900 dark:text-white focus:outline-none" aria-label="Toggle mobile menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="lg:hidden text-center mt-2">
+                <span class="text-sm font-bold text-gray-900 dark:text-white">Black Orchid Specialized Staffing Solutions</span>
+            </div>
+            
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 flex flex-col gap-4">
+                <a href="index.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Home</a>
+                <a href="rtx.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">RTX Strategy</a>
+                <a href="blog.html" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Journal</a>
+                <a href="index.html#contact" class="text-gray-900 dark:text-white hover:text-orchid transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-deep-black to-gray-900 dark:from-gray-950 dark:to-black text-white py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Accessibility Statement</h1>
+                    <p class="text-xl">Our Commitment to Digital Inclusion</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    
+                    <div class="bg-orchid bg-opacity-10 dark:bg-orchid dark:bg-opacity-20 border-l-4 border-orchid p-8 rounded-lg mb-12">
+                        <h2 class="text-2xl font-bold mb-4 text-deep-black dark:text-white">Our Commitment to Accessibility</h2>
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            Black Orchid Specialized Staffing Solutions (BOSSS) is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards to provide an inclusive environment for our resilient talent community.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-12">
+                        
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Conformance Status</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
+                                </p>
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    <strong>BOSSS is partially conformant with WCAG 2.1 level AA.</strong> Partially conformant means that some parts of the content do not fully conform to the accessibility standard, though we strive for full compliance across all core user pathways, including our RTX Grit Snapshot and application forms.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Feedback</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                                    We welcome your feedback on the accessibility of the BOSSS website. Please let us know if you encounter accessibility barriers:
+                                </p>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-start gap-4">
+                                        <svg class="w-6 h-6 text-orchid mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-bold text-deep-black dark:text-white">Email</p>
+                                            <a href="mailto:compliance@bosssllc.com" class="text-orchid hover:underline">compliance@bosssllc.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4">
+                                        <svg class="w-6 h-6 text-orchid mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-bold text-deep-black dark:text-white">Mailing Address</p>
+                                            <p class="text-gray-700 dark:text-gray-300">110 N. San Joaquin St., 2nd Floor<br>Stockton, CA 95202</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mt-6">
+                                    We try to respond to feedback within <strong>5 business days</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Technical Specifications</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    Accessibility of the BOSSS website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
+                                    <li>HTML</li>
+                                    <li>WAI-ARIA</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mt-4">
+                                    These technologies are relied upon for conformance with the accessibility standards used.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Assessment Approach</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                                    BOSSS assessed the accessibility of our website by the following approaches:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 flex flex-col gap-2">
+                                    <li>Self-evaluation</li>
+                                    <li>Manual testing of critical user journeys (application and assessment tools)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-deep-black dark:text-white">Formal Complaints</h2>
+                            <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+                                <p class="text-lg text-gray-700 dark:text-gray-300">
+                                    We aim to respond to accessibility complaints within <strong>5 business days</strong> and to propose a solution within <strong>10 business days</strong>. You are entitled to escalate a complaint to the relevant local authority if you are dissatisfied with our response.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-deep-black dark:bg-gray-950 text-white p-8 rounded-lg text-center">
+                            <p class="text-lg">
+                                <strong>Last Updated:</strong> April 11, 2026
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-deep-black dark:bg-gray-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="logo (2).png" alt="BOSSS Logo" class="h-12 w-auto mb-4 dark:invert transition-all duration-300">
+                    <p class="text-gray-400 mt-4">Elite talent for specialized solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-gray-400 hover:text-orchid transition-colors">Home</a>
+                        <a href="index.html#services" class="text-gray-400 hover:text-orchid transition-colors">Services</a>
+                        <a href="rtx.html" class="text-gray-400 hover:text-orchid transition-colors">RTX Strategy</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-orchid transition-colors">Journal</a>
+                        <a href="index.html#contact" class="text-gray-400 hover:text-orchid transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal & Compliance</h4>
+                    <div class="flex flex-col gap-2">
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-orchid transition-colors">Terms of Service</a>
+                        <a href="privacy.html" class="text-gray-400 hover:text-orchid transition-colors">Privacy Policy</a>
+                        <a href="eeo.html" class="text-gray-400 hover:text-orchid transition-colors">EEO Policy</a>
+                        <a href="worker-rights.html" class="text-gray-400 hover:text-orchid transition-colors">Worker Rights</a>
+                        <a href="accessibility.html" class="text-gray-400 hover:text-orchid transition-colors">Accessibility</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <a href="https://www.linkedin.com/company/bosssllc" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-orchid transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        Follow us on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2026 Black Orchid Specialized Staffing Solutions (BOSSS). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            
+            const sunIcon = document.getElementById('sunIcon');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIconMobile = document.getElementById('sunIconMobile');
+            const moonIconMobile = document.getElementById('moonIconMobile');
+            
+            if (html.classList.contains('dark')) {
+                localStorage.setItem('darkMode', 'dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                sunIconMobile.classList.remove('hidden');
+                moonIconMobile.classList.add('hidden');
+            } else {
+                localStorage.setItem('darkMode', 'light');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                sunIconMobile.classList.add('hidden');
+                moonIconMobile.classList.remove('hidden');
+            }
+        }
+
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+        const html = document.documentElement;
+
+        const currentMode = localStorage.getItem('darkMode') || 'light';
+        
+        if (currentMode === 'dark') {
+            html.classList.add('dark');
+            document.getElementById('sunIcon').classList.remove('hidden');
+            document.getElementById('moonIcon').classList.add('hidden');
+            document.getElementById('sunIconMobile').classList.remove('hidden');
+            document.getElementById('moonIconMobile').classList.add('hidden');
+        }
+
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+    </script>
+</body>
+</html>
