@@ -210,6 +210,17 @@ const articles = [
 "readTime": "9 min",
 "category": "Workforce",
 "slug": "the-capex-trap-ev-workforce-architecture"
+},
+  {
+"id": "grit-over-experience-automated-warehouse",
+"title": "Grit Over Experience: Resilience in Automated Warehouses",
+"excerpt": "Why traditional experience is a legacy metric. Discover how the Resilient Talent Xchange finds the grit your automated facility needs.",
+"image": "https://cdn.marblism.com/GG1jbrhQP1F.webp",
+"imageAlt": "Grit Over Experience: Resilience in Automated Warehouses",
+"date": "2026-04-12",
+"readTime": "6 min",
+"category": "Workforce",
+"slug": "grit-over-experience-automated-warehouse"
 }
 ];
 
