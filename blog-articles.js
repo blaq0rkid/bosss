@@ -232,6 +232,17 @@ date: "2026-04-14",
 readTime: "7 min",
 category: "Workforce",
 slug: "why-recruitment-solutions-manage-ai-disruption"
+},
+  {
+id: "5c3647c2-e99e-4d15-9ccb-d2797c342152",
+title: "Why Recruitment Solutions Manage AI Disruption",
+excerpt: "Discover why workforce architecture and strategic recruitment solutions are the only ways to navigate AI disruption in the Port of Stockton's logistics landscape.",
+image: "https://cdn.marblism.com/pVOiwAatmOP.webp",
+imageAlt: "Professional Recruitment Solutions and AI Disruption in Logistics",
+date: "2026-04-14",
+readTime: "7 min",
+category: "Workforce",
+slug: "why-recruitment-solutions-manage-ai-disruption"
 }
 ];
 
