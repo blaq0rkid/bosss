@@ -232,7 +232,18 @@ date: "2026-04-14",
 readTime: "7 min",
 category: "Workforce",
 slug: "why-recruitment-solutions-manage-ai-disruption"
-}
+},
+  {  
+  "id": "07b732e6-e53d-4d84-b2f6-386cab592e81",  
+  "title": "The Year-Round Hustle: Why Temp to Hire Staffing Will Change the Way You Manage Port Volatility",  
+  "excerpt": "Discover why traditional hiring is a gamble in volatile port environments and how a strategic temp-to-hire model provides the workforce architecture needed to scale.",  
+  "image": "https://cdn.marblism.com/TAGN1J77STm.webp",  
+  "imageAlt": "Logistics professionals discussing workforce strategy at the Port of Stockton",  
+  "date": "2026-04-16",  
+  "readTime": "8 min",  
+  "category": "Workforce",  
+  "slug": "temp-to-hire-port-volatility-strategy"  
+}  
 ];
 
 // Function to create article HTML with thumbnail and proper linking
