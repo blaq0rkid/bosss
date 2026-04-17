@@ -243,7 +243,18 @@ slug: "why-recruitment-solutions-manage-ai-disruption"
   "readTime": "8 min",  
   "category": "Workforce",  
   "slug": "temp-to-hire-port-volatility-strategy"  
-}  
+},
+  {  
+  "id": "7a483f90-f54d-4e2c-9739-9cb8c7610dd2",  
+  "title": "The ‘Safe’ Candidate is Your Biggest Risk: Breaking the Job-Hugging Stagnation",  
+  "excerpt": "Aeron Carter breaks down why 'job-hugging' stalls Green Port leadership and why resilience should drive your hiring solutions now.",  
+  "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop",  
+  "imageAlt": "Logistics leader overseeing high-tech terminal operations",  
+  "date": "2026-04-17",  
+  "readTime": "6 min",  
+  "category": "Workforce Architecture",  
+  "slug": "executive-search-logistics-grit-job-hugging"  
+}
 ];
 
 // Function to create article HTML with thumbnail and proper linking
