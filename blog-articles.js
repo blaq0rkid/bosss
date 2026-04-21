@@ -254,6 +254,17 @@ slug: "why-recruitment-solutions-manage-ai-disruption"
   "readTime": "6 min",  
   "category": "Workforce Architecture",  
   "slug": "executive-search-logistics-grit-job-hugging"  
+},
+  {
+"id": "b3e2d5c1-8f90-4a6b-bc7d-5e4f3a2b1c0d",
+"title": "Resumes are Dead: Why Temp to Hire is the Ultimate Grit Audition",
+"excerpt": "Aeron Carter breaks down why resumes miss resilience, and why temp to hire staffing is the smartest grit test for Port of Stockton employers.",
+"image": "https://cdn.marblism.com/xwiY6Cgv1hC.webp",
+"imageAlt": "Resumes are Dead: Why Temp to Hire is the Ultimate Grit Audition",
+"date": "2026-04-17",
+"readTime": "8 min",
+"category": "Workforce",
+"slug": "resumes-dead-temp-to-hire-port-grit"
 }
 ];
 
