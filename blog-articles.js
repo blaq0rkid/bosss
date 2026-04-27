@@ -265,6 +265,17 @@ slug: "why-recruitment-solutions-manage-ai-disruption"
   "readTime": "10 min",  
   "category": "Technology",  
   "slug": "clean-port-grant-recruitment-evaluation"  
+},
+{
+"id": "workforce-architecture-vs-resumes-2026",
+"title": "Workforce Architecture Over Resumes",
+"excerpt": "Resumes are dead. In the high-stakes world of zero-emission logistics, you need workforce architecture. Learn how BOSSS builds high-grit teams.",
+"image": "https://cdn.marblism.com/TKXdOtJVc6b.webp",
+"imageAlt": "Abstract representation of workforce architecture and strategic talent acquisition.",
+"date": "2026-04-27",
+"readTime": "12 min",
+"category": "Workforce",
+"slug": "workforce-architecture-vs-resumes"
 }
 ];
 
