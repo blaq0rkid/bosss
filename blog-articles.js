@@ -255,16 +255,16 @@ slug: "why-recruitment-solutions-manage-ai-disruption"
   "category": "Workforce Architecture",  
   "slug": "executive-search-logistics-grit-job-hugging"  
 },
-  {
-"id": "b3e2d5c1-8f90-4a6b-bc7d-5e4f3a2b1c0d",
-"title": "Resumes are Dead: Why Temp to Hire is the Ultimate Grit Audition",
-"excerpt": "Aeron Carter breaks down why resumes miss resilience, and why temp to hire staffing is the smartest grit test for Port of Stockton employers.",
-"image": "https://cdn.marblism.com/xwiY6Cgv1hC.webp",
-"imageAlt": "Resumes are Dead: Why Temp to Hire is the Ultimate Grit Audition",
-"date": "2026-04-17",
-"readTime": "8 min",
-"category": "Workforce",
-"slug": "resumes-dead-temp-to-hire-port-grit"
+  {  
+  "id": "clean-port-grant-recruitment-2026",  
+  "title": "Why the $110M Clean Port Grant Changes Recruitment",  
+  "excerpt": "The $110M Clean Port Grant for Stockton isn't just about tech: it’s a workforce crisis. Learn why traditional hiring fails and how BOSSS provides the solution.",  
+  "image": "https://cdn.marblism.com/NXvAxmFtd_D.webp",  
+  "imageAlt": "Industrial port scene representing the $110M Clean Port Grant and zero-emission logistics transition.",  
+  "date": "2026-04-27",  
+  "readTime": "10 min",  
+  "category": "Technology",  
+  "slug": "clean-port-grant-recruitment-evaluation"  
 }
 ];
 
